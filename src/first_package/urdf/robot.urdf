@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- http://wiki.ros.org/urdf/XML/link -->
+    <robot name="fourwheel robot">
+        <link name="body link">
+            <origin rpy = "0 0 0 " xyz="0 0 0"/>
+            <geometry>
+                <box size="1 0.6 0.3"/> <!--dimensions in the x,y,z axes-->
+            </geometry>
+            <material name="red">
+                <color rgba="1 0 0 1"/>
+            </material>
+        </link>
+    </robot> 

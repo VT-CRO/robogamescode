@@ -1,0 +1,40 @@
+[0.035s] Invoking command in '/home/youssefchebil/dev_ws/build/gazebo_dev': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/youssefchebil/dev_ws/src/gazebo_ros_pkgs/gazebo_dev -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/youssefchebil/dev_ws/install/gazebo_dev
+[0.051s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.051s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.051s]   CMake.
+[0.051s] 
+[0.051s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.051s]   CMake that the project does not need compatibility with older versions.
+[0.051s] 
+[0.051s] [0m
+[0.418s] -- The C compiler identification is GNU 13.2.0
+[0.748s] -- The CXX compiler identification is GNU 13.2.0
+[0.785s] -- Detecting C compiler ABI info
+[0.960s] -- Detecting C compiler ABI info - done
+[0.970s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.971s] -- Detecting C compile features
+[0.974s] -- Detecting C compile features - done
+[0.996s] -- Detecting CXX compiler ABI info
+[1.147s] -- Detecting CXX compiler ABI info - done
+[1.154s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.154s] -- Detecting CXX compile features
+[1.154s] -- Detecting CXX compile features - done
+[1.191s] -- Configuring incomplete, errors occurred!
+[1.193s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[1.193s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[1.193s]   asked CMake to find a package configuration file provided by "catkin", but
+[1.193s]   CMake did not find one.
+[1.193s] 
+[1.193s]   Could not find a package configuration file provided by "catkin" with any
+[1.193s]   of the following names:
+[1.193s] 
+[1.193s]     catkinConfig.cmake
+[1.193s]     catkin-config.cmake
+[1.193s] 
+[1.193s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[1.193s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[1.193s]   provides a separate development package or SDK, be sure it has been
+[1.193s]   installed.
+[1.193s] 
+[1.193s] [0m
+[1.195s] Invoked command in '/home/youssefchebil/dev_ws/build/gazebo_dev' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/youssefchebil/dev_ws/src/gazebo_ros_pkgs/gazebo_dev -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/youssefchebil/dev_ws/install/gazebo_dev
