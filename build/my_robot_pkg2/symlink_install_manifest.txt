@@ -1,0 +1,15 @@
+/home/vtcro/car_robot_ws/install/my_robot_pkg2/share/ament_index/resource_index/package_run_dependencies/my_robot_pkg2
+/home/vtcro/car_robot_ws/install/my_robot_pkg2/share/ament_index/resource_index/parent_prefix_path/my_robot_pkg2
+/home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/ament_prefix_path.sh
+/home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/ament_prefix_path.dsv
+/home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/path.sh
+/home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/path.dsv
+/home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.bash
+/home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.sh
+/home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.zsh
+/home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.dsv
+/home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/package.dsv
+/home/vtcro/car_robot_ws/install/my_robot_pkg2/share/ament_index/resource_index/packages/my_robot_pkg2
+/home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/cmake/my_robot_pkg2Config.cmake
+/home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/cmake/my_robot_pkg2Config-version.cmake
+/home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/package.xml

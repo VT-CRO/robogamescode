@@ -1,0 +1,44 @@
+[0.183s] Invoking command in '/home/vtcro/car_robot_ws/build/my_robot_pkg2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/vtcro/car_robot_ws/src/my_robot_pkg2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vtcro/car_robot_ws/install/my_robot_pkg2
+[0.227s] -- The C compiler identification is GNU 13.3.0
+[0.272s] -- The CXX compiler identification is GNU 13.3.0
+[0.286s] -- Detecting C compiler ABI info
+[0.361s] -- Detecting C compiler ABI info - done
+[0.368s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.368s] -- Detecting C compile features
+[0.369s] -- Detecting C compile features - done
+[0.376s] -- Detecting CXX compiler ABI info
+[0.461s] -- Detecting CXX compiler ABI info - done
+[0.469s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.470s] -- Detecting CXX compile features
+[0.470s] -- Detecting CXX compile features - done
+[0.475s] -- Found ament_cmake: 2.5.2 (/opt/ros2_jazzy/ros2-linux/share/ament_cmake/cmake)
+[0.600s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.652s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.707s] -- Found ament_lint_auto: 0.17.1 (/opt/ros2_jazzy/ros2-linux/share/ament_lint_auto/cmake)
+[0.795s] -- Added test 'lint_cmake' to check CMake code style
+[0.796s] -- Added test 'xmllint' to check XML markup files
+[0.797s] -- Configuring done (0.6s)
+[0.800s] -- Generating done (0.0s)
+[0.801s] -- Build files have been written to: /home/vtcro/car_robot_ws/build/my_robot_pkg2
+[0.805s] Invoked command in '/home/vtcro/car_robot_ws/build/my_robot_pkg2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/vtcro/car_robot_ws/src/my_robot_pkg2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vtcro/car_robot_ws/install/my_robot_pkg2
+[0.806s] Invoking command in '/home/vtcro/car_robot_ws/build/my_robot_pkg2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vtcro/car_robot_ws/build/my_robot_pkg2 -- -j12 -l12
+[0.842s] Invoked command in '/home/vtcro/car_robot_ws/build/my_robot_pkg2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vtcro/car_robot_ws/build/my_robot_pkg2 -- -j12 -l12
+[0.843s] Invoking command in '/home/vtcro/car_robot_ws/build/my_robot_pkg2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vtcro/car_robot_ws/build/my_robot_pkg2
+[0.850s] -- Install configuration: ""
+[0.850s] -- Execute custom install script
+[0.850s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/ament_index/resource_index/package_run_dependencies/my_robot_pkg2
+[0.858s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/ament_index/resource_index/parent_prefix_path/my_robot_pkg2
+[0.867s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/ament_prefix_path.sh
+[0.875s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/ament_prefix_path.dsv
+[0.883s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/path.sh
+[0.891s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/path.dsv
+[0.898s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.bash
+[0.906s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.sh
+[0.914s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.zsh
+[0.922s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.dsv
+[0.930s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/package.dsv
+[0.938s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/ament_index/resource_index/packages/my_robot_pkg2
+[0.946s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/cmake/my_robot_pkg2Config.cmake
+[0.954s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/cmake/my_robot_pkg2Config-version.cmake
+[0.962s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/package.xml
+[0.972s] Invoked command in '/home/vtcro/car_robot_ws/build/my_robot_pkg2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vtcro/car_robot_ws/build/my_robot_pkg2
