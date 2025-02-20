@@ -11,6 +11,7 @@
 /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf/materials.xacro
 /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf/leg1.sdf
 /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf/leg1.urdf
+/home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf/leg1_original.xacro
 /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes/driveleg_1.stl
 /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes/sphere_1.stl
 /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes/upperleg_1.stl

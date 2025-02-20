@@ -49,35 +49,6 @@
   </collision>
 </link>
 
-<link name="driveleg_1">
-  <inertial>
-    <origin xyz="-0.05976865106430535 0.005429114943386826 0.004895930218958272" rpy="0 0 0"/>
-    <mass value="0.023446265816511214"/>
-      <inertia ixx="2.5e-06" iyy="5.0e-05" izz="5.2e-05" ixy="0" iyz="0" ixz="0"/>  </inertial>
-  <visual>
-    <origin xyz="0.03048 -0.129263 -0.005" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find leg1_description)/meshes/driveleg_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.03048 -0.129263 -0.005" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find leg1_description)/meshes/driveleg_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-Virtual Link to break kinematic loop
-<link name="lowerleg_virtual">
-  <inertial>
-    <origin xyz="0.15 -0.9 -0.005" rpy="0 0 0"/>
-    <mass value="0.001"/>
-    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
-  </inertial>
-</link>
-
 <link name="lowerleg_1">
   <inertial>
     <origin xyz="-0.0008439272273708387 -0.060147780853207225 0.006243463622114645" rpy="0 0 0"/>
@@ -85,14 +56,14 @@ Virtual Link to break kinematic loop
     <inertia ixx="2.3e-05" iyy="1e-06" izz="2.3e-05" ixy="1e-06" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.15 -0.14 -0.005" rpy="0 0 0"/>
+    <origin xyz="0.15 -0.09 -0.005" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find leg1_description)/meshes/lowerleg_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.15 -0.14 -0.005" rpy="0 0 0"/>
+    <origin xyz="0.15 -0.09 -0.005" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find leg1_description)/meshes/lowerleg_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -130,39 +101,16 @@ Virtual Link to break kinematic loop
   <limit upper="0.471239" lower="-0.331613" effort="100" velocity="100"/>
 </joint>
 
-<joint name="Revolute 9" type="revolute">
-  <origin xyz="-0.03048 0.129263 0.005" rpy="0 0 0"/>
-  <parent link="base_link"/>
-  <child link="driveleg_1"/>
-  <axis xyz="0.0 0.0 -1.0"/>
-  <limit upper="0.488692" lower="-0.541052" effort="100" velocity="100"/>
-</joint>
-
-<joint name="Revolute_10" type="revolute">
-  <origin xyz="-0.11952 0.011 0.0" rpy="0 0 0"/>
-  <parent link="driveleg_1"/>
+<joint name="Revolute 14" type="revolute">
+  <origin xyz="-0.15 0.0 0.0" rpy="0 0 0"/>
+  <parent link="upperleg_1"/>
   <child link="lowerleg_1"/>
   <axis xyz="0.0 0.0 1.0"/>
-  <limit upper="1.2464" lower="0.0004346" effort="100" velocity="100"/>
-</joint>
-
-Mimic_lowerleg Joint
-<joint name="mimic_lowerleg" type="fixed">
-  <origin xyz="-0.0 -0.052 0.0" rpy="0 0 0"/>
-  <parent link="lowerleg_1"/>
-  <child link="lowerleg_virtual"/>
-  <axis xyz="0.0 0.0 1.0"/>
-</joint>
-
-<joint name="Rigid 14" type="revolute">
-  <parent link="upperleg_1"/>
-  <child link="lowerleg_virtual"/>
-  <axis xyz="0.0 0.0 1.0"/>
-  <limit effort="10.0" lower="-1.57" upper="1.57" velocity="1.0"/>
+  <limit upper="0.191986" lower="-0.506145" effort="100" velocity="100"/>
 </joint>
 
 <joint name="Rigid 13" type="fixed">
-  <origin xyz="-0.0025 -0.1255 0.00875" rpy="0 0 0"/>
+  <origin xyz="-0.0025 -0.0755 0.00875" rpy="0 0 0"/>
   <parent link="lowerleg_1"/>
   <child link="sphere_1"/>
 </joint>

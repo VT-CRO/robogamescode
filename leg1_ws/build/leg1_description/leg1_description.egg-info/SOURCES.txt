@@ -26,4 +26,5 @@ urdf/leg1.sdf
 urdf/leg1.trans
 urdf/leg1.urdf
 urdf/leg1.xacro
+urdf/leg1_original.xacro
 urdf/materials.xacro

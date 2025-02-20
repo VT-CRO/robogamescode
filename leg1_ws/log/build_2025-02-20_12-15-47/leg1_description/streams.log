@@ -1,0 +1,52 @@
+[0.630s] Invoking command in '/home/houndsito/vt-cro/robogamescode/leg1_ws/src/leg/leg1_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/houndsito/vt-cro/robogamescode/leg1_ws/build/leg1_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/leg1_description build --build-base /home/houndsito/vt-cro/robogamescode/leg1_ws/build/leg1_description/build install --record /home/houndsito/vt-cro/robogamescode/leg1_ws/build/leg1_description/install.log --single-version-externally-managed install_data
+[0.833s] running egg_info
+[0.833s] creating ../../../build/leg1_description/leg1_description.egg-info
+[0.847s] writing ../../../build/leg1_description/leg1_description.egg-info/PKG-INFO
+[0.847s] writing dependency_links to ../../../build/leg1_description/leg1_description.egg-info/dependency_links.txt
+[0.848s] writing requirements to ../../../build/leg1_description/leg1_description.egg-info/requires.txt
+[0.848s] writing top-level names to ../../../build/leg1_description/leg1_description.egg-info/top_level.txt
+[0.848s] writing manifest file '../../../build/leg1_description/leg1_description.egg-info/SOURCES.txt'
+[0.878s] reading manifest file '../../../build/leg1_description/leg1_description.egg-info/SOURCES.txt'
+[0.879s] writing manifest file '../../../build/leg1_description/leg1_description.egg-info/SOURCES.txt'
+[0.879s] running build
+[0.879s] running build_py
+[0.879s] creating /home/houndsito/vt-cro/robogamescode/leg1_ws/build/leg1_description/build
+[0.879s] creating /home/houndsito/vt-cro/robogamescode/leg1_ws/build/leg1_description/build/lib
+[0.879s] creating /home/houndsito/vt-cro/robogamescode/leg1_ws/build/leg1_description/build/lib/leg1_description
+[0.879s] copying leg1_description/__init__.py -> /home/houndsito/vt-cro/robogamescode/leg1_ws/build/leg1_description/build/lib/leg1_description
+[0.880s] running install
+[0.884s] running install_lib
+[0.899s] creating /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/lib/python3.12/site-packages/leg1_description
+[0.899s] copying /home/houndsito/vt-cro/robogamescode/leg1_ws/build/leg1_description/build/lib/leg1_description/__init__.py -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/lib/python3.12/site-packages/leg1_description
+[0.899s] byte-compiling /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/lib/python3.12/site-packages/leg1_description/__init__.py to __init__.cpython-312.pyc
+[0.899s] running install_data
+[0.899s] creating /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/ament_index
+[0.899s] creating /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/ament_index/resource_index
+[0.900s] creating /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/ament_index/resource_index/packages
+[0.900s] copying resource/leg1_description -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/ament_index/resource_index/packages
+[0.900s] copying package.xml -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description
+[0.900s] creating /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/launch
+[0.900s] copying launch/gazebo.launch.py -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/launch
+[0.900s] copying launch/display.launch.py -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/launch
+[0.900s] creating /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.900s] copying urdf/leg1.trans -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.900s] copying urdf/leg1.xacro -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.900s] copying urdf/leg1.gazebo -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.900s] copying urdf/install -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.900s] copying urdf/materials.xacro -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.900s] copying urdf/leg1.sdf -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.900s] copying urdf/leg1.urdf -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.900s] copying urdf/leg1_original.xacro -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.901s] creating /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes
+[0.901s] copying meshes/driveleg_1.stl -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes
+[0.901s] copying meshes/sphere_1.stl -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes
+[0.901s] copying meshes/upperleg_1.stl -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes
+[0.901s] copying meshes/base_link.stl -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes
+[0.901s] copying meshes/lowerleg_1.stl -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes
+[0.902s] creating /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/config
+[0.902s] copying config/display.rviz -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/config
+[0.902s] running install_egg_info
+[0.919s] Copying ../../../build/leg1_description/leg1_description.egg-info to /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/lib/python3.12/site-packages/leg1_description-0.0.0-py3.12.egg-info
+[0.919s] running install_scripts
+[1.022s] writing list of installed files to '/home/houndsito/vt-cro/robogamescode/leg1_ws/build/leg1_description/install.log'
+[1.045s] Invoked command in '/home/houndsito/vt-cro/robogamescode/leg1_ws/src/leg/leg1_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/houndsito/vt-cro/robogamescode/leg1_ws/build/leg1_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/leg1_description build --build-base /home/houndsito/vt-cro/robogamescode/leg1_ws/build/leg1_description/build install --record /home/houndsito/vt-cro/robogamescode/leg1_ws/build/leg1_description/install.log --single-version-externally-managed install_data
