@@ -97,14 +97,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/houndsito/leg1_ws/install/leg1_description/share/leg1_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/houndsito/leg1_ws/install/leg1_description/share/leg1_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -117,47 +117,16 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 -0.09 -0.005"/>
       <geometry>
-        <mesh filename="file:///home/houndsito/leg1_ws/install/leg1_description/share/leg1_description/meshes/upperleg_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes/upperleg_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.0 -0.09 -0.005"/>
       <geometry>
-        <mesh filename="file:///home/houndsito/leg1_ws/install/leg1_description/share/leg1_description/meshes/upperleg_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes/upperleg_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
-  </link>
-  <link name="driveleg_1">
-    <inertial>
-      <origin rpy="0 0 0" xyz="-0.05976865106430535 0.005429114943386826 0.004895930218958272"/>
-      <mass value="0.023446265816511214"/>
-      <inertia ixx="2.5e-06" ixy="0" ixz="0" iyy="5.0e-05" iyz="0" izz="5.2e-05"/>
-    </inertial>
-    <visual>
-      <origin rpy="0 0 0" xyz="0.03048 -0.129263 -0.005"/>
-      <geometry>
-        <mesh filename="file:///home/houndsito/leg1_ws/install/leg1_description/share/leg1_description/meshes/driveleg_1.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <material name="silver"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0.03048 -0.129263 -0.005"/>
-      <geometry>
-        <mesh filename="file:///home/houndsito/leg1_ws/install/leg1_description/share/leg1_description/meshes/driveleg_1.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-    </collision>
-  </link>
-  
-
-Virtual Link to break kinematic loop
-
-  <link name="lowerleg_virtual">
-    <inertial>
-      <origin rpy="0 0 0" xyz="0.15 -0.14 -0.005"/>
-      <mass value="0.001"/>
-      <inertia ixx="1e-06" ixy="0.0" ixz="0.0" iyy="1e-06" iyz="0.0" izz="1e-06"/>
-    </inertial>
   </link>
   <link name="lowerleg_1">
     <inertial>
@@ -166,16 +135,16 @@ Virtual Link to break kinematic loop
       <inertia ixx="2.3e-05" ixy="1e-06" ixz="0.0" iyy="1e-06" iyz="-0.0" izz="2.3e-05"/>
     </inertial>
     <visual>
-      <origin rpy="0 0 0" xyz="0.15 -0.14 -0.005"/>
+      <origin rpy="0 0 0" xyz="0.15 -0.09 -0.005"/>
       <geometry>
-        <mesh filename="file:///home/houndsito/leg1_ws/install/leg1_description/share/leg1_description/meshes/lowerleg_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes/lowerleg_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.15 -0.14 -0.005"/>
+      <origin rpy="0 0 0" xyz="0.15 -0.09 -0.005"/>
       <geometry>
-        <mesh filename="file:///home/houndsito/leg1_ws/install/leg1_description/share/leg1_description/meshes/lowerleg_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes/lowerleg_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -188,14 +157,14 @@ Virtual Link to break kinematic loop
     <visual>
       <origin rpy="0 0 0" xyz="0.1525 -0.0145 -0.01375"/>
       <geometry>
-        <mesh filename="file:///home/houndsito/leg1_ws/install/leg1_description/share/leg1_description/meshes/sphere_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes/sphere_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.1525 -0.0145 -0.01375"/>
       <geometry>
-        <mesh filename="file:///home/houndsito/leg1_ws/install/leg1_description/share/leg1_description/meshes/sphere_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes/sphere_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -207,41 +176,15 @@ Virtual Link to break kinematic loop
     <axis xyz="0.0 0.0 1.0"/>
     <limit effort="100" lower="-0.331613" upper="0.471239" velocity="100"/>
   </joint>
-  <joint name="Revolute 9" type="revolute">
-    <origin rpy="0 0 0" xyz="-0.03048 0.129263 0.005"/>
-    <parent link="base_link"/>
-    <child link="driveleg_1"/>
-    <axis xyz="0.0 0.0 -1.0"/>
-    <limit effort="100" lower="-0.541052" upper="0.488692" velocity="100"/>
-  </joint>
-  <joint name="Revolute_10" type="revolute">
-    <origin rpy="0 0 0" xyz="-0.11952 0.011 0.0"/>
-    <parent link="driveleg_1"/>
-    <child link="lowerleg_1"/>
-    <axis xyz="0.0 0.0 1.0"/>
-    <limit effort="100" lower="0.0004346" upper="1.2464" velocity="100"/>
-  </joint>
-  
-
-Mimic_lowerleg Joint
-
-  <joint name="mimic_lowerleg" type="revolute">
+  <joint name="Revolute 14" type="revolute">
     <origin rpy="0 0 0" xyz="-0.15 0.0 0.0"/>
     <parent link="upperleg_1"/>
-    <child link="lowerleg_virtual"/>
-    <axis xyz="0.0 0.0 1.0"/>
-    <limit effort="100" lower="0.0004346" upper="1.2464" velocity="100"/>
-    <mimic joint="Revolute_10" multiplier="1.0" offset="0"/>
-  </joint>
-  <joint name="Rigid 14" type="revolute">
-    <origin rpy="0 0 0" xyz="-0.11952 0.011 0.0"/>
-    <parent link="lowerleg_virtual"/>
     <child link="lowerleg_1"/>
     <axis xyz="0.0 0.0 1.0"/>
-    <limit effort="100" lower="0.0004346" upper="1.2464" velocity="100"/>
+    <limit effort="100" lower="-0.506145" upper="0.191986" velocity="100"/>
   </joint>
   <joint name="Rigid 13" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.0025 -0.1255 0.00875"/>
+    <origin rpy="0 0 0" xyz="-0.0025 -0.0755 0.00875"/>
     <parent link="lowerleg_1"/>
     <child link="sphere_1"/>
   </joint>
