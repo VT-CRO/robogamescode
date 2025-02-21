@@ -1,0 +1,324 @@
+[0.115s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.115s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x753208ea5730>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x753208ea5430>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x753208ea5430>>, mixin_verb=('build',))
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.159s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo) by extension 'ros'
+[0.192s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dingo' with type 'ros.catkin' and name 'dingo'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_control) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_control) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_control) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_control) by extensions ['colcon_pkg']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_control) by extension 'colcon_pkg'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_control) by extensions ['colcon_meta']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_control) by extension 'colcon_meta'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_control) by extensions ['ros']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_control) by extension 'ros'
+[0.193s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dingo_control' with type 'ros.catkin' and name 'dingo_control'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_description) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_description) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_description) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_description) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_description) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_description) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_description) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_description) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_description) by extension 'ros'
+[0.195s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dingo_description' with type 'ros.catkin' and name 'dingo_description'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_gazebo) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_gazebo) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_gazebo) by extensions ['colcon_pkg']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_gazebo) by extension 'colcon_pkg'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_gazebo) by extensions ['colcon_meta']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_gazebo) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_gazebo) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_gazebo) by extension 'ros'
+[0.196s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dingo_gazebo' with type 'ros.catkin' and name 'dingo_gazebo'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing) by extension 'ignore_ament_install'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing) by extension 'ros'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing) by extensions ['cmake', 'python']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing) by extension 'cmake'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing) by extension 'python'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing) by extensions ['python_setup_py']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing) by extension 'python_setup_py'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_input_interfacing) by extensions ['ignore', 'ignore_ament_install']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_input_interfacing) by extension 'ignore'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_input_interfacing) by extension 'ignore_ament_install'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_input_interfacing) by extensions ['colcon_pkg']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_input_interfacing) by extension 'colcon_pkg'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_input_interfacing) by extensions ['colcon_meta']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_input_interfacing) by extension 'colcon_meta'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_input_interfacing) by extensions ['ros']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_input_interfacing) by extension 'ros'
+[0.198s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dingo_hardware_interfacing/dingo_input_interfacing' with type 'ros.catkin' and name 'dingo_input_interfacing'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_peripheral_interfacing) by extensions ['ignore', 'ignore_ament_install']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_peripheral_interfacing) by extension 'ignore'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_peripheral_interfacing) by extension 'ignore_ament_install'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_peripheral_interfacing) by extensions ['colcon_pkg']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_peripheral_interfacing) by extension 'colcon_pkg'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_peripheral_interfacing) by extensions ['colcon_meta']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_peripheral_interfacing) by extension 'colcon_meta'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_peripheral_interfacing) by extensions ['ros']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_peripheral_interfacing) by extension 'ros'
+[0.199s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dingo_hardware_interfacing/dingo_peripheral_interfacing' with type 'ros.catkin' and name 'dingo_peripheral_interfacing'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_servo_interfacing) by extensions ['ignore', 'ignore_ament_install']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_servo_interfacing) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_servo_interfacing) by extension 'ignore_ament_install'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_servo_interfacing) by extensions ['colcon_pkg']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_servo_interfacing) by extension 'colcon_pkg'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_servo_interfacing) by extensions ['colcon_meta']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_servo_interfacing) by extension 'colcon_meta'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_servo_interfacing) by extensions ['ros']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_hardware_interfacing/dingo_servo_interfacing) by extension 'ros'
+[0.201s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dingo_hardware_interfacing/dingo_servo_interfacing' with type 'ros.catkin' and name 'dingo_servo_interfacing'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_utilities) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_utilities) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_utilities) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_utilities) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_utilities) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_utilities) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_utilities) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_utilities) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/dingo_utilities) by extension 'ros'
+[0.202s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dingo_utilities' with type 'ros.catkin' and name 'dingo_utilities'
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.226s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 317 installed packages in /opt/ros/jazzy
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'dingo' build argument 'cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'dingo' build argument 'cmake_target' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'dingo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'dingo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'dingo' build argument 'cmake_clean_first' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'dingo' build argument 'cmake_force_configure' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'dingo' build argument 'ament_cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'dingo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'dingo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.278s] DEBUG:colcon.colcon_core.verb:Building package 'dingo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo', 'merge_install': False, 'path': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo', 'symlink_install': False, 'test_result_base': None}
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'dingo_control' build argument 'cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'dingo_control' build argument 'cmake_target' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'dingo_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'dingo_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'dingo_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'dingo_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'dingo_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'dingo_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'dingo_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.278s] DEBUG:colcon.colcon_core.verb:Building package 'dingo_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_control', 'merge_install': False, 'path': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_control', 'symlink_install': False, 'test_result_base': None}
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_description' build argument 'cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_description' build argument 'cmake_target' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.279s] DEBUG:colcon.colcon_core.verb:Building package 'dingo_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_description', 'merge_install': False, 'path': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_description', 'symlink_install': False, 'test_result_base': None}
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'dingo_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.279s] DEBUG:colcon.colcon_core.verb:Building package 'dingo_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_gazebo', 'merge_install': False, 'path': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_input_interfacing' build argument 'cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_input_interfacing' build argument 'cmake_target' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_input_interfacing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_input_interfacing' build argument 'cmake_clean_cache' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_input_interfacing' build argument 'cmake_clean_first' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_input_interfacing' build argument 'cmake_force_configure' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_input_interfacing' build argument 'ament_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_input_interfacing' build argument 'catkin_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_input_interfacing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.280s] DEBUG:colcon.colcon_core.verb:Building package 'dingo_input_interfacing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_input_interfacing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_input_interfacing', 'merge_install': False, 'path': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_hardware_interfacing/dingo_input_interfacing', 'symlink_install': False, 'test_result_base': None}
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_peripheral_interfacing' build argument 'cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_peripheral_interfacing' build argument 'cmake_target' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_peripheral_interfacing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_peripheral_interfacing' build argument 'cmake_clean_cache' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_peripheral_interfacing' build argument 'cmake_clean_first' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_peripheral_interfacing' build argument 'cmake_force_configure' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_peripheral_interfacing' build argument 'ament_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_peripheral_interfacing' build argument 'catkin_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_peripheral_interfacing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.280s] DEBUG:colcon.colcon_core.verb:Building package 'dingo_peripheral_interfacing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_peripheral_interfacing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_peripheral_interfacing', 'merge_install': False, 'path': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_hardware_interfacing/dingo_peripheral_interfacing', 'symlink_install': False, 'test_result_base': None}
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_servo_interfacing' build argument 'cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_servo_interfacing' build argument 'cmake_target' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'dingo_servo_interfacing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'dingo_servo_interfacing' build argument 'cmake_clean_cache' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'dingo_servo_interfacing' build argument 'cmake_clean_first' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'dingo_servo_interfacing' build argument 'cmake_force_configure' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'dingo_servo_interfacing' build argument 'ament_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'dingo_servo_interfacing' build argument 'catkin_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'dingo_servo_interfacing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.281s] DEBUG:colcon.colcon_core.verb:Building package 'dingo_servo_interfacing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_servo_interfacing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_servo_interfacing', 'merge_install': False, 'path': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_hardware_interfacing/dingo_servo_interfacing', 'symlink_install': False, 'test_result_base': None}
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'dingo_utilities' build argument 'cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'dingo_utilities' build argument 'cmake_target' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'dingo_utilities' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'dingo_utilities' build argument 'cmake_clean_cache' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'dingo_utilities' build argument 'cmake_clean_first' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'dingo_utilities' build argument 'cmake_force_configure' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'dingo_utilities' build argument 'ament_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'dingo_utilities' build argument 'catkin_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'dingo_utilities' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.281s] DEBUG:colcon.colcon_core.verb:Building package 'dingo_utilities' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_utilities', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_utilities', 'merge_install': False, 'path': '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_utilities', 'symlink_install': False, 'test_result_base': None}
+[0.281s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.282s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.282s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo' with build type 'catkin'
+[0.282s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo'
+[0.285s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.285s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.285s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.289s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_control' with build type 'catkin'
+[0.289s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_control'
+[0.289s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.289s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.293s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_description' with build type 'catkin'
+[0.293s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_description'
+[0.293s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.293s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.296s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_gazebo' with build type 'catkin'
+[0.297s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_gazebo'
+[0.297s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.297s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.300s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_hardware_interfacing/dingo_input_interfacing' with build type 'catkin'
+[0.300s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_hardware_interfacing/dingo_input_interfacing'
+[0.300s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.300s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.303s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_hardware_interfacing/dingo_peripheral_interfacing' with build type 'catkin'
+[0.303s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_hardware_interfacing/dingo_peripheral_interfacing'
+[0.303s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.303s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.306s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_hardware_interfacing/dingo_servo_interfacing' with build type 'catkin'
+[0.307s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_hardware_interfacing/dingo_servo_interfacing'
+[0.307s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.307s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.310s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_utilities' with build type 'catkin'
+[0.310s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_utilities'
+[0.310s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.310s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.318s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo
+[0.321s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_control
+[0.323s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_description
+[0.324s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_gazebo': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_gazebo -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_gazebo
+[0.326s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_input_interfacing': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_hardware_interfacing/dingo_input_interfacing -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_input_interfacing
+[0.328s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_peripheral_interfacing': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_hardware_interfacing/dingo_peripheral_interfacing -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_peripheral_interfacing
+[0.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_servo_interfacing': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_hardware_interfacing/dingo_servo_interfacing -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_servo_interfacing
+[0.336s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_utilities': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_utilities -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_utilities
+[0.925s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_description' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_description
+[0.927s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo
+[0.928s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_input_interfacing' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_hardware_interfacing/dingo_input_interfacing -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_input_interfacing
+[0.928s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_utilities' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_utilities -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_utilities
+[0.929s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_control' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_control
+[0.930s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_peripheral_interfacing' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_hardware_interfacing/dingo_peripheral_interfacing -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_peripheral_interfacing
+[0.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_gazebo' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_gazebo -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_gazebo
+[0.932s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/build/dingo_servo_interfacing' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/src/dingo_hardware_interfacing/dingo_servo_interfacing -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_servo_interfacing
+[0.937s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dingo_description)
+[0.939s] Level 1:colcon.colcon_core.environment:checking '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_description' for CMake module files
+[0.939s] Level 1:colcon.colcon_core.environment:checking '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_description' for CMake config files
+[0.940s] Level 1:colcon.colcon_core.environment:checking '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_description/bin'
+[0.940s] Level 1:colcon.colcon_core.environment:checking '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_description/lib/pkgconfig/dingo_description.pc'
+[0.940s] Level 1:colcon.colcon_core.environment:checking '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_description/lib/python3.12/site-packages'
+[0.940s] Level 1:colcon.colcon_core.environment:checking '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_description/bin'
+[0.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_description/share/dingo_description/package.ps1'
+[0.941s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_description/share/dingo_description/package.dsv'
+[0.941s] INFO:colcon.colcon_core.shell:Creating package script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_description/share/dingo_description/package.sh'
+[0.941s] INFO:colcon.colcon_core.shell:Creating package script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_description/share/dingo_description/package.bash'
+[0.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_description/share/dingo_description/package.zsh'
+[0.942s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo_description/share/colcon-core/packages/dingo_description)
+[0.942s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dingo)
+[0.943s] Level 1:colcon.colcon_core.environment:checking '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo' for CMake module files
+[0.943s] Level 1:colcon.colcon_core.environment:checking '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo' for CMake config files
+[0.944s] Level 1:colcon.colcon_core.environment:checking '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo/bin'
+[0.944s] Level 1:colcon.colcon_core.environment:checking '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo/lib/pkgconfig/dingo.pc'
+[0.944s] Level 1:colcon.colcon_core.environment:checking '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo/lib/python3.12/site-packages'
+[0.944s] Level 1:colcon.colcon_core.environment:checking '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo/bin'
+[0.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo/share/dingo/package.ps1'
+[0.945s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo/share/dingo/package.dsv'
+[0.945s] INFO:colcon.colcon_core.shell:Creating package script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo/share/dingo/package.sh'
+[0.945s] INFO:colcon.colcon_core.shell:Creating package script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo/share/dingo/package.bash'
+[0.945s] INFO:colcon.colcon_core.shell:Creating package script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo/share/dingo/package.zsh'
+[0.945s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/dingo/share/colcon-core/packages/dingo)
+[0.957s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.957s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.957s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[0.957s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.963s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.963s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.963s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.981s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.982s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/local_setup.ps1'
+[0.983s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/_local_setup_util_ps1.py'
+[0.983s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/setup.ps1'
+[0.984s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/local_setup.sh'
+[0.984s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/_local_setup_util_sh.py'
+[0.985s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/setup.sh'
+[0.985s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/local_setup.bash'
+[0.986s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/setup.bash'
+[0.986s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/local_setup.zsh'
+[0.986s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/houndsito/vt-cro/robogamescode/dingo/dingo_ws/install/setup.zsh'
