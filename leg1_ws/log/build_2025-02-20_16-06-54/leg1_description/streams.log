@@ -1,0 +1,52 @@
+[0.692s] Invoking command in '/home/vtcro/robogamescode/leg1_ws/src/leg/leg1_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vtcro/robogamescode/leg1_ws/build/leg1_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vtcro/robogamescode/leg1_ws/install/leg1_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/leg1_description build --build-base /home/vtcro/robogamescode/leg1_ws/build/leg1_description/build install --record /home/vtcro/robogamescode/leg1_ws/build/leg1_description/install.log --single-version-externally-managed install_data
+[0.917s] running egg_info
+[0.917s] creating ../../../build/leg1_description/leg1_description.egg-info
+[0.935s] writing ../../../build/leg1_description/leg1_description.egg-info/PKG-INFO
+[0.935s] writing dependency_links to ../../../build/leg1_description/leg1_description.egg-info/dependency_links.txt
+[0.935s] writing requirements to ../../../build/leg1_description/leg1_description.egg-info/requires.txt
+[0.936s] writing top-level names to ../../../build/leg1_description/leg1_description.egg-info/top_level.txt
+[0.936s] writing manifest file '../../../build/leg1_description/leg1_description.egg-info/SOURCES.txt'
+[0.973s] reading manifest file '../../../build/leg1_description/leg1_description.egg-info/SOURCES.txt'
+[0.973s] writing manifest file '../../../build/leg1_description/leg1_description.egg-info/SOURCES.txt'
+[0.973s] running build
+[0.973s] running build_py
+[0.973s] creating /home/vtcro/robogamescode/leg1_ws/build/leg1_description/build
+[0.973s] creating /home/vtcro/robogamescode/leg1_ws/build/leg1_description/build/lib
+[0.974s] creating /home/vtcro/robogamescode/leg1_ws/build/leg1_description/build/lib/leg1_description
+[0.974s] copying leg1_description/__init__.py -> /home/vtcro/robogamescode/leg1_ws/build/leg1_description/build/lib/leg1_description
+[0.974s] running install
+[0.978s] running install_lib
+[0.997s] creating /home/vtcro/robogamescode/leg1_ws/install/leg1_description/lib/python3.12/site-packages/leg1_description
+[0.997s] copying /home/vtcro/robogamescode/leg1_ws/build/leg1_description/build/lib/leg1_description/__init__.py -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/lib/python3.12/site-packages/leg1_description
+[0.997s] byte-compiling /home/vtcro/robogamescode/leg1_ws/install/leg1_description/lib/python3.12/site-packages/leg1_description/__init__.py to __init__.cpython-312.pyc
+[0.997s] running install_data
+[0.997s] creating /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/ament_index
+[0.998s] creating /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/ament_index/resource_index
+[0.998s] creating /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/ament_index/resource_index/packages
+[0.998s] copying resource/leg1_description -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/ament_index/resource_index/packages
+[0.998s] copying package.xml -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description
+[0.998s] creating /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/launch
+[0.998s] copying launch/gazebo.launch.py -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/launch
+[0.998s] copying launch/display.launch.py -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/launch
+[0.998s] creating /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.998s] copying urdf/leg1.trans -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.998s] copying urdf/leg1.gazebo -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.998s] copying urdf/leg1_original.xacro -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.998s] copying urdf/install -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.999s] copying urdf/materials.xacro -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.999s] copying urdf/leg1.xacro -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.999s] copying urdf/leg1.sdf -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.999s] copying urdf/leg1.urdf -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+[0.999s] creating /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes
+[0.999s] copying meshes/sphere_1.stl -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes
+[0.999s] copying meshes/driveleg_1.stl -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes
+[1.000s] copying meshes/upperleg_1.stl -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes
+[1.000s] copying meshes/base_link.stl -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes
+[1.000s] copying meshes/lowerleg_1.stl -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes
+[1.000s] creating /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/config
+[1.000s] copying config/display.rviz -> /home/vtcro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/config
+[1.000s] running install_egg_info
+[1.020s] Copying ../../../build/leg1_description/leg1_description.egg-info to /home/vtcro/robogamescode/leg1_ws/install/leg1_description/lib/python3.12/site-packages/leg1_description-0.0.0-py3.12.egg-info
+[1.020s] running install_scripts
+[1.153s] writing list of installed files to '/home/vtcro/robogamescode/leg1_ws/build/leg1_description/install.log'
+[1.170s] Invoked command in '/home/vtcro/robogamescode/leg1_ws/src/leg/leg1_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vtcro/robogamescode/leg1_ws/build/leg1_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vtcro/robogamescode/leg1_ws/install/leg1_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/leg1_description build --build-base /home/vtcro/robogamescode/leg1_ws/build/leg1_description/build install --record /home/vtcro/robogamescode/leg1_ws/build/leg1_description/install.log --single-version-externally-managed install_data
