@@ -29,6 +29,7 @@ copying launch/gazebo.launch.py -> /home/houndsito/vt-cro/robogamescode/leg1_ws/
 copying launch/display.launch.py -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/launch
 creating /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
 copying urdf/leg1.trans -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+copying urdf/dingo.sdf -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
 copying urdf/leg1.xacro -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
 copying urdf/leg1.gazebo -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
 copying urdf/install -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
@@ -36,6 +37,7 @@ copying urdf/materials.xacro -> /home/houndsito/vt-cro/robogamescode/leg1_ws/ins
 copying urdf/leg1.sdf -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
 copying urdf/leg1.urdf -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
 copying urdf/leg1_original.xacro -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
+copying urdf/dingo.urdf -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/urdf
 creating /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes
 copying meshes/driveleg_1.stl -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes
 copying meshes/sphere_1.stl -> /home/houndsito/vt-cro/robogamescode/leg1_ws/install/leg1_description/share/leg1_description/meshes
