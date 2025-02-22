@@ -1,0 +1,1 @@
+/home/vtcro/panda_robot_ws/build/cobot_test/ament_cmake_core/cobot_testConfig-version.cmake

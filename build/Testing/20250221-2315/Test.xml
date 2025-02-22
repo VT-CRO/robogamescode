@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20250221-2315-Experimental"
+	Name="vtcro-durham"
+	Generator="ctest-3.28.3"
+	CompilerName="/usr/bin/g++"
+	CompilerVersion="13.3.0"
+	OSName="Linux"
+	Hostname="vtcro-durham"
+	OSRelease="6.8.0-52-generic"
+	OSVersion="#53-Ubuntu SMP PREEMPT_DYNAMIC Sat Jan 11 00:06:25 UTC 2025"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="25"
+	ModelID="33"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="8191"
+	TotalPhysicalMemory="32013"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="4449.96"
+	>
+	<Testing>
+		<StartDateTime>Feb 21 18:15 EST</StartDateTime>
+		<StartTestTime>1740179731</StartTestTime>
+		<TestList/>
+		<EndDateTime>Feb 21 18:15 EST</EndDateTime>
+		<EndTestTime>1740179731</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

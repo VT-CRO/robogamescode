@@ -1,0 +1,1 @@
+/home/vtcro/panda_robot_ws/src/panda_robot_moveit_config/launch/display.launch.py

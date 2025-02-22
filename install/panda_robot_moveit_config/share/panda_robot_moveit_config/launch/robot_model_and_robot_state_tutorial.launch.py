@@ -1,0 +1,1 @@
+/home/vtcro/panda_robot_ws/src/panda_robot_moveit_config/launch/robot_model_and_robot_state_tutorial.launch.py

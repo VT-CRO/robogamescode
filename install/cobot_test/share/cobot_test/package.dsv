@@ -1,0 +1,6 @@
+source;share/cobot_test/hook/cmake_prefix_path.dsv
+source;share/cobot_test/hook/cmake_prefix_path.sh
+source;share/cobot_test/local_setup.bash
+source;share/cobot_test/local_setup.dsv
+source;share/cobot_test/local_setup.sh
+source;share/cobot_test/local_setup.zsh

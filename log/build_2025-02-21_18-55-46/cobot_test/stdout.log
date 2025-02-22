@@ -1,0 +1,26 @@
+[ 20%] Built target perception
+[ 40%] Built target micro_ros_bridge_interface
+[ 60%] Built target test_random_cobot_node
+[ 80%] Built target test_custom_cobot_node
+[100%] Built target robot_kinematics
+-- Install configuration: ""
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/lib/cobot_test/test_random_cobot_node
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/lib/cobot_test/test_custom_cobot_node
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/lib/cobot_test/robot_kinematics
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/lib/cobot_test/micro_ros_bridge_interface
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/lib/cobot_test/perception
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/share/ament_index/resource_index/package_run_dependencies/cobot_test
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/share/ament_index/resource_index/parent_prefix_path/cobot_test
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/environment/ament_prefix_path.sh
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/environment/path.sh
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/environment/path.dsv
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/local_setup.bash
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/local_setup.sh
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/local_setup.zsh
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/local_setup.dsv
+-- Installing: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/package.dsv
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/share/ament_index/resource_index/packages/cobot_test
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/cmake/cobot_testConfig.cmake
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/cmake/cobot_testConfig-version.cmake
+-- Up-to-date: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/package.xml

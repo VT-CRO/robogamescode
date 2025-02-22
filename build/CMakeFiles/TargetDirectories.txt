@@ -1,0 +1,14 @@
+/home/vtcro/panda_robot_ws/build/CMakeFiles/uninstall.dir
+/home/vtcro/panda_robot_ws/build/CMakeFiles/cobot_test_uninstall.dir
+/home/vtcro/panda_robot_ws/build/CMakeFiles/test_random_cobot_node.dir
+/home/vtcro/panda_robot_ws/build/CMakeFiles/test_custom_cobot_node.dir
+/home/vtcro/panda_robot_ws/build/CMakeFiles/robot_kinematics.dir
+/home/vtcro/panda_robot_ws/build/CMakeFiles/micro_ros_bridge_interface.dir
+/home/vtcro/panda_robot_ws/build/CMakeFiles/perception.dir
+/home/vtcro/panda_robot_ws/build/CMakeFiles/test.dir
+/home/vtcro/panda_robot_ws/build/CMakeFiles/edit_cache.dir
+/home/vtcro/panda_robot_ws/build/CMakeFiles/rebuild_cache.dir
+/home/vtcro/panda_robot_ws/build/CMakeFiles/list_install_components.dir
+/home/vtcro/panda_robot_ws/build/CMakeFiles/install.dir
+/home/vtcro/panda_robot_ws/build/CMakeFiles/install/local.dir
+/home/vtcro/panda_robot_ws/build/CMakeFiles/install/strip.dir

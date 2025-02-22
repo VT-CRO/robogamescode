@@ -1,0 +1,1 @@
+/home/vtcro/panda_robot_ws/src/panda_robot_moveit_config/launch/static_virtual_joint_tfs.launch.py

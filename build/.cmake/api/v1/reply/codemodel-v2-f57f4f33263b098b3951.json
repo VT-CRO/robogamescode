@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-590f377b184e646b4b3c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cobot_test",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cobot_test_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cobot_test_uninstall-Debug-0a300f74b7a657004570.json",
+					"name" : "cobot_test_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "micro_ros_bridge_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-micro_ros_bridge_interface-Debug-3be8ffb47f4ec00a27fd.json",
+					"name" : "micro_ros_bridge_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "perception::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-perception-Debug-381fc5e709b61829bef0.json",
+					"name" : "perception",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_kinematics::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_kinematics-Debug-7b7219be0ddccdec7d7e.json",
+					"name" : "robot_kinematics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_custom_cobot_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_custom_cobot_node-Debug-b130dc77e6337c8e8af3.json",
+					"name" : "test_custom_cobot_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_random_cobot_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_random_cobot_node-Debug-4c70820403a0c3defa33.json",
+					"name" : "test_random_cobot_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-515fa2fe9f431a74cda7.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/vtcro/panda_robot_ws/build",
+		"source" : "/home/vtcro/panda_robot_ws/src/cobot_test"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,62 @@
+[0.012s] Invoking command in '/home/vtcro/panda_robot_ws/build/panda_robot_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vtcro/dog_ws/install/leg1_description DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/vtcro/panda_robot_ws/src/panda_robot_moveit_config -DCMAKE_INSTALL_PREFIX=/home/vtcro/panda_robot_ws/install/panda_robot_moveit_config
+[0.057s] -- The C compiler identification is GNU 13.3.0
+[0.101s] -- The CXX compiler identification is GNU 13.3.0
+[0.114s] -- Detecting C compiler ABI info
+[0.190s] -- Detecting C compiler ABI info - done
+[0.197s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.197s] -- Detecting C compile features
+[0.197s] -- Detecting C compile features - done
+[0.205s] -- Detecting CXX compiler ABI info
+[0.290s] -- Detecting CXX compiler ABI info - done
+[0.302s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.302s] -- Detecting CXX compile features
+[0.302s] -- Detecting CXX compile features - done
+[0.309s] -- Found ament_cmake: 2.5.2 (/opt/ros2_jazzy/ros2-linux/share/ament_cmake/cmake)
+[0.444s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.618s] -- Configuring done (0.6s)
+[0.621s] -- Generating done (0.0s)
+[0.622s] -- Build files have been written to: /home/vtcro/panda_robot_ws/build/panda_robot_moveit_config
+[0.627s] Invoked command in '/home/vtcro/panda_robot_ws/build/panda_robot_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vtcro/dog_ws/install/leg1_description DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/vtcro/panda_robot_ws/src/panda_robot_moveit_config -DCMAKE_INSTALL_PREFIX=/home/vtcro/panda_robot_ws/install/panda_robot_moveit_config
+[0.627s] Invoking command in '/home/vtcro/panda_robot_ws/build/panda_robot_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vtcro/dog_ws/install/leg1_description DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vtcro/panda_robot_ws/build/panda_robot_moveit_config -- -j12 -l12
+[0.664s] Invoked command in '/home/vtcro/panda_robot_ws/build/panda_robot_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vtcro/dog_ws/install/leg1_description DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vtcro/panda_robot_ws/build/panda_robot_moveit_config -- -j12 -l12
+[0.673s] Invoking command in '/home/vtcro/panda_robot_ws/build/panda_robot_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vtcro/dog_ws/install/leg1_description DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vtcro/panda_robot_ws/build/panda_robot_moveit_config
+[0.679s] -- Install configuration: ""
+[0.679s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/ament_index/resource_index/package_run_dependencies/panda_robot_moveit_config
+[0.680s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/ament_index/resource_index/parent_prefix_path/panda_robot_moveit_config
+[0.680s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/environment/ament_prefix_path.sh
+[0.680s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/environment/ament_prefix_path.dsv
+[0.680s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/environment/path.sh
+[0.680s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/environment/path.dsv
+[0.680s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/local_setup.bash
+[0.680s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/local_setup.sh
+[0.681s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/local_setup.zsh
+[0.681s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/local_setup.dsv
+[0.681s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/package.dsv
+[0.681s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/ament_index/resource_index/packages/panda_robot_moveit_config
+[0.681s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/cmake/panda_robot_moveit_configConfig.cmake
+[0.681s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/cmake/panda_robot_moveit_configConfig-version.cmake
+[0.681s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/package.xml
+[0.681s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/launch
+[0.681s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/launch/warehouse_db.launch.py
+[0.682s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/launch/robot_model_and_robot_state_tutorial.launch.py
+[0.682s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/launch/moveit_rviz.launch.py
+[0.682s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/launch/demo.launch.py
+[0.682s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/launch/display.launch.py
+[0.682s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/launch/static_virtual_joint_tfs.launch.py
+[0.683s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/launch/spawn_controllers.launch.py
+[0.683s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/launch/setup_assistant.launch.py
+[0.683s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/launch/move_group.launch.py
+[0.683s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/launch/rsp.launch.py
+[0.683s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/config
+[0.684s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/config/panda.srdf
+[0.684s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/config/moveit_controllers.yaml
+[0.684s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/config/joint_limits.yaml
+[0.684s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/config/moveit.rviz
+[0.684s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/config/panda.ros2_control.xacro
+[0.684s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/config/initial_positions.yaml
+[0.684s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/config/kinematics.yaml
+[0.684s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/config/pilz_cartesian_limits.yaml
+[0.684s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/config/ros2_controllers.yaml
+[0.685s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/config/panda.urdf.xacro
+[0.685s] -- Installing: /home/vtcro/panda_robot_ws/install/panda_robot_moveit_config/share/panda_robot_moveit_config/.setup_assistant
+[0.686s] Invoked command in '/home/vtcro/panda_robot_ws/build/panda_robot_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vtcro/dog_ws/install/leg1_description DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vtcro/panda_robot_ws/build/panda_robot_moveit_config

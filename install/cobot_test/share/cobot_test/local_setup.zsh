@@ -1,0 +1,1 @@
+/home/vtcro/panda_robot_ws/build/cobot_test/ament_cmake_environment_hooks/local_setup.zsh
