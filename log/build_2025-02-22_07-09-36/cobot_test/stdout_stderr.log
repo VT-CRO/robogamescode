@@ -1,0 +1,29 @@
+[ 20%] Built target perception
+[ 40%] Built target robot_kinematics
+[ 60%] Built target test_random_cobot_node
+[ 70%] [32mBuilding CXX object CMakeFiles/micro_ros_bridge_interface.dir/src/micro_ros_bridge_interface.cpp.o[0m
+[ 90%] Built target test_custom_cobot_node
+[100%] [32m[1mLinking CXX executable micro_ros_bridge_interface[0m
+[100%] Built target micro_ros_bridge_interface
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/lib/cobot_test/test_random_cobot_node
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/lib/cobot_test/test_custom_cobot_node
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/lib/cobot_test/robot_kinematics
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/lib/cobot_test/micro_ros_bridge_interface
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/lib/cobot_test/perception
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/ament_index/resource_index/package_run_dependencies/cobot_test
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/ament_index/resource_index/parent_prefix_path/cobot_test
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/environment/path.sh
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/environment/path.dsv
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/local_setup.bash
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/local_setup.sh
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/local_setup.zsh
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/local_setup.dsv
+-- Symlinking: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/package.dsv
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/ament_index/resource_index/packages/cobot_test
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/cmake/cobot_testConfig.cmake
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/cmake/cobot_testConfig-version.cmake
+-- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/package.xml

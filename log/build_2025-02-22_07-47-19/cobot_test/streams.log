@@ -1,0 +1,33 @@
+[0.022s] Invoking command in '/home/vtcro/panda_robot_ws/build/cobot_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vtcro/panda_robot_ws/build/cobot_test -- -j12 -l12
+[0.082s] [ 30%] [32mBuilding CXX object CMakeFiles/micro_ros_bridge_interface.dir/src/micro_ros_bridge_interface.cpp.o[0m
+[0.082s] [ 30%] Built target perception
+[0.083s] [ 50%] Built target robot_kinematics
+[0.085s] [ 70%] Built target test_random_cobot_node
+[0.085s] [ 90%] Built target test_custom_cobot_node
+[5.357s] [100%] [32m[1mLinking CXX executable micro_ros_bridge_interface[0m
+[6.083s] [100%] Built target micro_ros_bridge_interface
+[6.094s] Invoked command in '/home/vtcro/panda_robot_ws/build/cobot_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vtcro/panda_robot_ws/build/cobot_test -- -j12 -l12
+[6.095s] Invoking command in '/home/vtcro/panda_robot_ws/build/cobot_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vtcro/panda_robot_ws/build/cobot_test
+[6.103s] -- Install configuration: ""
+[6.103s] -- Execute custom install script
+[6.103s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/lib/cobot_test/test_random_cobot_node
+[6.103s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/lib/cobot_test/test_custom_cobot_node
+[6.103s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/lib/cobot_test/robot_kinematics
+[6.103s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/lib/cobot_test/micro_ros_bridge_interface
+[6.104s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/lib/cobot_test/perception
+[6.104s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/ament_index/resource_index/package_run_dependencies/cobot_test
+[6.104s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/ament_index/resource_index/parent_prefix_path/cobot_test
+[6.104s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/environment/ament_prefix_path.sh
+[6.104s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/environment/ament_prefix_path.dsv
+[6.104s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/environment/path.sh
+[6.104s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/environment/path.dsv
+[6.104s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/local_setup.bash
+[6.105s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/local_setup.sh
+[6.105s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/local_setup.zsh
+[6.105s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/local_setup.dsv
+[6.105s] -- Symlinking: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/package.dsv
+[6.113s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/ament_index/resource_index/packages/cobot_test
+[6.113s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/cmake/cobot_testConfig.cmake
+[6.113s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/cmake/cobot_testConfig-version.cmake
+[6.113s] -- Up-to-date symlink: /home/vtcro/panda_robot_ws/install/cobot_test/share/cobot_test/package.xml
+[6.115s] Invoked command in '/home/vtcro/panda_robot_ws/build/cobot_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vtcro/panda_robot_ws/build/cobot_test

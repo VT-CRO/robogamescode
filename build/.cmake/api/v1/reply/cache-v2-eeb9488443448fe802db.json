@@ -3202,6 +3202,18 @@
 			"value" : "/opt/ros2_jazzy/ros2-linux/share/message_filters/cmake"
 		},
 		{
+			"name" : "microcdr_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for microcdr."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/vtcro/microros_ws/install/microcdr/share/microcdr/cmake"
+		},
+		{
 			"name" : "moveit_core_DIR",
 			"properties" : 
 			[
@@ -3714,6 +3726,30 @@
 			"value" : "/opt/ros2_jazzy/ros2-linux/share/rosgraph_msgs/cmake"
 		},
 		{
+			"name" : "rosidl_adapter_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for rosidl_adapter."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/opt/ros2_jazzy/ros2-linux/share/rosidl_adapter/cmake"
+		},
+		{
+			"name" : "rosidl_cmake_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for rosidl_cmake."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/opt/ros2_jazzy/ros2-linux/share/rosidl_cmake/cmake"
+		},
+		{
 			"name" : "rosidl_core_runtime_DIR",
 			"properties" : 
 			[
@@ -3892,6 +3928,30 @@
 			],
 			"type" : "PATH",
 			"value" : "/opt/ros2_jazzy/ros2-linux/share/rosidl_typesupport_introspection_cpp/cmake"
+		},
+		{
+			"name" : "rosidl_typesupport_microxrcedds_c_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for rosidl_typesupport_microxrcedds_c."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/vtcro/microros_ws/install/rosidl_typesupport_microxrcedds_c/share/rosidl_typesupport_microxrcedds_c/cmake"
+		},
+		{
+			"name" : "rosidl_typesupport_microxrcedds_cpp_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for rosidl_typesupport_microxrcedds_cpp."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/vtcro/microros_ws/install/rosidl_typesupport_microxrcedds_cpp/share/rosidl_typesupport_microxrcedds_cpp/cmake"
 		},
 		{
 			"name" : "rsl_DIR",

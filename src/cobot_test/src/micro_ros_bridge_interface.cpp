@@ -3,6 +3,13 @@
 #include "std_msgs/msg/float32_multi_array.hpp"
 #include <vector>
 #include <cmath>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sstream>
+#include <string>
+#include <cstdio>
+#include <termios.h>
+
 
 class MicroROSInterfaceNode : public rclcpp::Node
 {
@@ -21,15 +28,36 @@ public:
             //->when called again the function will preserve the preset value for that param
 
         // Publisher: Sends processed servo commands to the Micro-ROS node (Teensy)
-        servo_command_pub_ = this->create_publisher<std_msgs::msg::Float32MultiArray>("/servo_commands", 10);
-            
+        //servo_command_pub_ = this->create_publisher<std_msgs::msg::Float32MultiArray>("/servo_commands", 10);
+         // Open serial port (adjust the port name if needed)
+        
+         //serial_fd_ = open_serial("/dev/serial0", 115200);
+        serial_fd_ = open_serial("/dev/ttyACM0", 115200);
+
+        if (serial_fd_ < 0) {
+            RCLCPP_ERROR(this->get_logger(), "Failed to open serial port");
+        } else {
+            RCLCPP_INFO(this->get_logger(), "Serial port opened successfully");
+        }
+
+        RCLCPP_INFO(this->get_logger(), "Micro-ROS Bridge Interface Node Initialized");
+
+        
         RCLCPP_INFO(this->get_logger(), "Micro-ROS Interface Node Initialized");
+    }
+
+    ~MicroROSInterfaceNode() {
+        if (serial_fd_ >= 0) {
+            close(serial_fd_);
+        }
     }
 
 private:
     rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr joint_angle_sub_;
     rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr servo_feedback_sub_;
-    rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr servo_command_pub_;
+    //rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr servo_command_pub_;
+
+    int serial_fd_{-1};
 
     std::vector<float> last_servo_commands_;
 
@@ -51,16 +79,40 @@ private:
 
         // Convert joint angles to servo commands
         std::vector<float> servo_commands = convertJointAnglesToServoCommands(msg->position);
-
-        // Publish servo commands
-        std_msgs::msg::Float32MultiArray servo_msg;
-        servo_msg.data = servo_commands;
-        servo_command_pub_->publish(servo_msg);
-
         // Store last sent commands for comparison with feedback
         last_servo_commands_ = servo_commands;
 
-        RCLCPP_INFO(this->get_logger(), "Published Servo Commands.");
+        // Publish servo commands
+        // std_msgs::msg::Float32MultiArray servo_msg;
+        // servo_msg.data = servo_commands;
+        // servo_command_pub_->publish(servo_msg);
+        // Build a comma-separated string (e.g., "1500,1700\n")
+        std::ostringstream oss;
+        for (size_t i = 0; i < servo_commands.size(); ++i)
+        {
+            oss << servo_commands[i];
+            if (i < servo_commands.size() - 1)
+                oss << ",";
+        }
+        oss << "\n";
+        std::string command_str = oss.str();
+        RCLCPP_INFO(this->get_logger(), "Sending servo command: %s", command_str.c_str());
+
+        // Write the command to the serial port.
+        if (serial_fd_ >= 0)
+        {
+            ssize_t bytes_written = write(serial_fd_, command_str.c_str(), command_str.length());
+            if (bytes_written < 0)
+            {
+                RCLCPP_ERROR(this->get_logger(), "Failed to write to serial port");
+            } else {
+                //tcflush(serial_fd_, TCIOFLUSH); // 🛠 Flush the output buffer
+                RCLCPP_INFO(this->get_logger(), "Flushed Serial Port");
+            }
+        }
+        
+
+        //RCLCPP_INFO(this->get_logger(), "Published Servo Commands.");
     }
 
     // Callback: Receive feedback from Micro-ROS and compare with desired joint states
@@ -83,6 +135,51 @@ private:
             }
         }
     }
+
+     // Helper function to open and configure a serial port.
+     int open_serial(const char* port, int baud)
+     {
+        int fd = open(port, O_RDWR | O_NOCTTY | O_NDELAY);
+        if (fd == -1)
+        {
+            perror("open_serial: Unable to open port");
+            return -1;
+        }
+        // Set file descriptor to blocking mode.
+        // fcntl(fd, F_SETFL, 0);
+
+        struct termios options;
+        tcgetattr(fd, &options);
+
+        // Set baud rate.
+        speed_t brate;
+        switch(baud)
+        {
+            case 9600:   brate = B9600;   break;
+            case 19200:  brate = B19200;  break;
+            case 38400:  brate = B38400;  break;
+            case 57600:  brate = B57600;  break;
+            case 115200: brate = B115200; break;
+            default:     brate = B115200; break;
+        }
+        cfsetispeed(&options, brate);
+        cfsetospeed(&options, brate);
+
+        // Configure 8N1 (8 data bits, no parity, 1 stop bit)
+        options.c_cflag |= (CLOCAL | CREAD);
+        options.c_cflag &= ~PARENB;
+        options.c_cflag &= ~CSTOPB;
+        options.c_cflag &= ~CSIZE;
+        options.c_cflag |= CS8;
+
+        // Set raw input and output mode.
+        options.c_lflag &= ~(ICANON | ECHO | ECHOE | ISIG);
+        options.c_iflag &= ~(IXON | IXOFF | IXANY);
+        options.c_oflag &= ~OPOST;
+
+        tcsetattr(fd, TCSANOW, &options);
+        return fd;
+     }
 };
 
 int main(int argc, char **argv)
