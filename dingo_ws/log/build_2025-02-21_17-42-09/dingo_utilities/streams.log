@@ -1,0 +1,40 @@
+[0.028s] Invoking command in '/home/vtcro/robogamescode/dingo_ws/build/dingo_utilities': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/vtcro/robogamescode/dingo_ws/src/dingo_utilities -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/vtcro/robogamescode/dingo_ws/install/dingo_utilities
+[0.037s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.037s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.037s]   CMake.
+[0.037s] 
+[0.038s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.038s]   CMake that the project does not need compatibility with older versions.
+[0.038s] 
+[0.038s] [0m
+[0.085s] -- The C compiler identification is GNU 13.3.0
+[0.148s] -- The CXX compiler identification is GNU 13.3.0
+[0.165s] -- Detecting C compiler ABI info
+[0.255s] -- Detecting C compiler ABI info - done
+[0.267s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.268s] -- Detecting C compile features
+[0.268s] -- Detecting C compile features - done
+[0.278s] -- Detecting CXX compiler ABI info
+[0.366s] -- Detecting CXX compiler ABI info - done
+[0.379s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.379s] -- Detecting CXX compile features
+[0.380s] -- Detecting CXX compile features - done
+[0.404s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[0.404s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.404s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.404s]   CMake did not find one.
+[0.404s] 
+[0.404s] -- Configuring incomplete, errors occurred!
+[0.404s]   Could not find a package configuration file provided by "catkin" with any
+[0.404s]   of the following names:
+[0.404s] 
+[0.404s]     catkinConfig.cmake
+[0.404s]     catkin-config.cmake
+[0.404s] 
+[0.404s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.405s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.405s]   provides a separate development package or SDK, be sure it has been
+[0.405s]   installed.
+[0.405s] 
+[0.405s] [0m
+[0.414s] Invoked command in '/home/vtcro/robogamescode/dingo_ws/build/dingo_utilities' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/vtcro/robogamescode/dingo_ws/src/dingo_utilities -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/vtcro/robogamescode/dingo_ws/install/dingo_utilities
