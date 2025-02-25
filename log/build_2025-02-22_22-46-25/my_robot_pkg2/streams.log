@@ -1,0 +1,21 @@
+[0.197s] Invoking command in '/home/vtcro/car_robot_ws/build/my_robot_pkg2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vtcro/car_robot_ws/install/my_robot_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vtcro/car_robot_ws/build/my_robot_pkg2 -- -j12 -l12
+[0.237s] Invoked command in '/home/vtcro/car_robot_ws/build/my_robot_pkg2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vtcro/car_robot_ws/install/my_robot_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/vtcro/car_robot_ws/build/my_robot_pkg2 -- -j12 -l12
+[0.237s] Invoking command in '/home/vtcro/car_robot_ws/build/my_robot_pkg2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vtcro/car_robot_ws/install/my_robot_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vtcro/car_robot_ws/build/my_robot_pkg2
+[0.245s] -- Install configuration: ""
+[0.246s] -- Execute custom install script
+[0.246s] -- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/ament_index/resource_index/package_run_dependencies/my_robot_pkg2
+[0.246s] -- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/ament_index/resource_index/parent_prefix_path/my_robot_pkg2
+[0.246s] -- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/ament_prefix_path.sh
+[0.246s] -- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/ament_prefix_path.dsv
+[0.246s] -- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/path.sh
+[0.246s] -- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/path.dsv
+[0.246s] -- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.bash
+[0.247s] -- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.sh
+[0.247s] -- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.zsh
+[0.247s] -- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.dsv
+[0.247s] -- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/package.dsv
+[0.256s] -- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/ament_index/resource_index/packages/my_robot_pkg2
+[0.256s] -- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/cmake/my_robot_pkg2Config.cmake
+[0.256s] -- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/cmake/my_robot_pkg2Config-version.cmake
+[0.256s] -- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/package.xml
+[0.258s] Invoked command in '/home/vtcro/car_robot_ws/build/my_robot_pkg2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vtcro/car_robot_ws/install/my_robot_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/vtcro/car_robot_ws/build/my_robot_pkg2
