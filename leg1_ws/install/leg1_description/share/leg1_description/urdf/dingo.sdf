@@ -1,0 +1,908 @@
+<sdf version='1.11'>
+  <model name='dingo'>
+    <link name='base_link'>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.81776000000000004</mass>
+        <inertia>
+          <ixx>0.00058474000000000004</ixx>
+          <ixy>-1.0045000000000001e-06</ixy>
+          <ixz>1.0886000000000001e-08</ixz>
+          <iyy>0.00029699000000000001</iyy>
+          <iyz>3.2027e-08</iyz>
+          <izz>0.00063853</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/base_collision.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/base_link.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+      <gravity>true</gravity>
+      <sensor name='imu_sensor' type='imu'>
+        <always_on>true</always_on>
+        <update_rate>100</update_rate>
+        <visualize>true</visualize>
+        <topic>__default_topic__</topic>
+        <plugin name='imu_plugin' filename='libgazebo_ros_imu_sensor.so'>
+          <topicName>notspot_imu/base_link_orientation</topicName>
+          <bodyName>imu_link</bodyName>
+          <updateRateHZ>15.0</updateRateHZ>
+          <gaussianNoise>0.0</gaussianNoise>
+          <xyzOffset>0 0 0</xyzOffset>
+          <rpyOffset>0 0 0</rpyOffset>
+          <frameName>base_link</frameName>
+          <initialOrientationAsReference>false</initialOrientationAsReference>
+        </plugin>
+        <pose>0 0 0 0 0 0</pose>
+      </sensor>
+    </link>
+    <joint name='FL_theta1' type='revolute'>
+      <pose relative_to='base_link'>0.11165 0.060999999999999999 -0.0144 1.5708 -5.5511151231257827e-17 1.5708</pose>
+      <parent>base_link</parent>
+      <child>FL_link1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.78539800000000004</lower>
+          <upper>0.78539800000000004</upper>
+          <effort>100</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='FL_link1'>
+      <pose relative_to='FL_theta1'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.29999999999999999</mass>
+        <inertia>
+          <ixx>0.000193</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00014889999999999999</iyy>
+          <iyz>0</iyz>
+          <izz>0.00012410000000000001</izz>
+        </inertia>
+      </inertial>
+      <collision name='FL_link1_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/L_link1_collision.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='FL_link1_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/FL_link1.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='FL_theta2' type='revolute'>
+      <pose relative_to='FL_link1'>0.049600000798433901 0.014400000013256 0 1.5707963434703534 1.5707956844874345 -1.5707963102922426</pose>
+      <parent>FL_link1</parent>
+      <child>FL_link2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-3</lower>
+          <upper>3</upper>
+          <effort>100</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='FL_link2'>
+      <pose relative_to='FL_theta2'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.10000000000000001</mass>
+        <inertia>
+          <ixx>6.9999999999999999e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>4.4399999999999998e-06</ixz>
+          <iyy>0.00017259999999999999</iyy>
+          <iyz>0</iyz>
+          <izz>0.00017568</izz>
+        </inertia>
+      </inertial>
+      <collision name='FL_link2_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/L_link2_collision.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='FL_link2_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/L_link2.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='FL_theta3' type='revolute'>
+      <pose relative_to='FL_link2'>0.129999999999897 0 0 0 0 1.5707959477442199</pose>
+      <parent>FL_link2</parent>
+      <child>FL_link3</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-3</lower>
+          <upper>3</upper>
+          <effort>100</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='FL_link3'>
+      <pose relative_to='FL_theta3'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.023022774392048001 0 0 0 0 0</pose>
+        <mass>0.12</mass>
+        <inertia>
+          <ixx>9.9599999999999995e-06</ixx>
+          <ixy>-1.3730000000000001e-05</ixy>
+          <ixz>-3.19e-06</ixz>
+          <iyy>0.00051607888442428479</iyy>
+          <iyz>-2.7000000000000001e-07</iyz>
+          <izz>0.00051549888442428476</izz>
+        </inertia>
+      </inertial>
+      <collision name='FL_link3_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/L_link3_collision.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='FL_link3_fixed_joint_lump__FL_link4_collision_1'>
+        <pose>0.13813664635228801 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/link4_collision.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1000000</kp>
+              <kd>100</kd>
+              <min_depth>0.00020000000000000001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='FL_link3_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/L_link3.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='FL_link3_fixed_joint_lump__FL_link4_visual_1'>
+        <pose>0.13813664635228801 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/link4.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='FR_theta1' type='revolute'>
+      <pose relative_to='base_link'>0.111650000000002 -0.060999999999998798 -0.014400000000024201 1.5707963267949201 5.5511151231257827e-17 1.5707963267949003</pose>
+      <parent>base_link</parent>
+      <child>FR_link1</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-0.78539800000000004</lower>
+          <upper>0.78539800000000004</upper>
+          <effort>100</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='FR_link1'>
+      <pose relative_to='FR_theta1'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.29999999999999999</mass>
+        <inertia>
+          <ixx>0.000193</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00014889999999999999</iyy>
+          <iyz>0</iyz>
+          <izz>0.00012410000000000001</izz>
+        </inertia>
+      </inertial>
+      <collision name='FR_link1_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/R_link1_collision.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='FR_link1_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/FR_link1.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='FR_theta2' type='revolute'>
+      <pose relative_to='FR_link1'>-0.049599999216912098 0.014400000000024201 0 1.5707963232203603 1.5707957213234747 -1.5707963303694328</pose>
+      <parent>FR_link1</parent>
+      <child>FR_link2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-3</lower>
+          <upper>3</upper>
+          <effort>100</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='FR_link2'>
+      <pose relative_to='FR_theta2'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.10000000000000001</mass>
+        <inertia>
+          <ixx>6.9999999999999999e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>4.4399999999999998e-06</ixz>
+          <iyy>0.00017259999999999999</iyy>
+          <iyz>0</iyz>
+          <izz>0.00017568</izz>
+        </inertia>
+      </inertial>
+      <collision name='FR_link2_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/R_link2_collision.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='FR_link2_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/R_link2.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='FR_theta3' type='revolute'>
+      <pose relative_to='FR_link2'>0.13000000353672 0 0 0 0 1.5707959843897801</pose>
+      <parent>FR_link2</parent>
+      <child>FR_link3</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-3</lower>
+          <upper>3</upper>
+          <effort>100</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='FR_link3'>
+      <pose relative_to='FR_theta3'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.02302277439207167 0 0 0 0 0</pose>
+        <mass>0.12</mass>
+        <inertia>
+          <ixx>9.9599999999999995e-06</ixx>
+          <ixy>-1.3730000000000001e-05</ixy>
+          <ixz>-3.19e-06</ixz>
+          <iyy>0.00051607888442493856</iyy>
+          <iyz>-2.7000000000000001e-07</iyz>
+          <izz>0.00051549888442493853</izz>
+        </inertia>
+      </inertial>
+      <collision name='FR_link3_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/R_link3_collision.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='FR_link3_fixed_joint_lump__FR_link4_collision_1'>
+        <pose>0.13813664635243 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/link4_collision.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1000000</kp>
+              <kd>100</kd>
+              <min_depth>0.00020000000000000001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='FR_link3_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/R_link3.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='FR_link3_fixed_joint_lump__FR_link4_visual_1'>
+        <pose>0.13813664635243 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/link4.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='RL_theta1' type='revolute'>
+      <pose relative_to='base_link'>-0.11165 0.060999999999999999 -0.0144 1.5708 -5.5511151231257827e-17 1.5708</pose>
+      <parent>base_link</parent>
+      <child>RL_link1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.78539800000000004</lower>
+          <upper>0.78539800000000004</upper>
+          <effort>100</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='RL_link1'>
+      <pose relative_to='RL_theta1'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.29999999999999999</mass>
+        <inertia>
+          <ixx>0.000193</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00014889999999999999</iyy>
+          <iyz>0</iyz>
+          <izz>0.00012410000000000001</izz>
+        </inertia>
+      </inertial>
+      <collision name='RL_link1_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/L_link1_collision.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='RL_link1_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/RL_link1.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='RL_theta2' type='revolute'>
+      <pose relative_to='RL_link1'>0.049600000798457403 0.014399999996394 0 1.5707963302509498 1.5707956843146085 -1.5707963234252447</pose>
+      <parent>RL_link1</parent>
+      <child>RL_link2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-3</lower>
+          <upper>3</upper>
+          <effort>100</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='RL_link2'>
+      <pose relative_to='RL_theta2'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.10000000000000001</mass>
+        <inertia>
+          <ixx>6.9999999999999999e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>4.4399999999999998e-06</ixz>
+          <iyy>0.00017259999999999999</iyy>
+          <iyz>0</iyz>
+          <izz>0.00017568</izz>
+        </inertia>
+      </inertial>
+      <collision name='RL_link2_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/L_link2_collision.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='RL_link2_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/L_link2.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='RL_theta3' type='revolute'>
+      <pose relative_to='RL_link2'>0.12999999999484901 0 0 0 0 1.57079594787326</pose>
+      <parent>RL_link2</parent>
+      <child>RL_link3</child>
+      <axis>
+        <xyz>0 0 0.99999999999997902</xyz>
+        <limit>
+          <lower>-3</lower>
+          <upper>3</upper>
+          <effort>100</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='RL_link3'>
+      <pose relative_to='RL_theta3'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.02302277439205383 0 0 0 0 0</pose>
+        <mass>0.12</mass>
+        <inertia>
+          <ixx>9.9599999999999995e-06</ixx>
+          <ixy>-1.3730000000000001e-05</ixy>
+          <ixz>-3.19e-06</ixz>
+          <iyy>0.0005160788844244459</iyy>
+          <iyz>-2.7000000000000001e-07</iyz>
+          <izz>0.00051549888442444587</izz>
+        </inertia>
+      </inertial>
+      <collision name='RL_link3_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/L_link3_collision.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='RL_link3_fixed_joint_lump__RL_link4_collision_1'>
+        <pose>0.13813664635232301 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/link4_collision.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1000000</kp>
+              <kd>100</kd>
+              <min_depth>0.00020000000000000001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='RL_link3_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/L_link3.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='RL_link3_fixed_joint_lump__RL_link4_visual_1'>
+        <pose>0.13813664635232301 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/link4.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='RR_theta1' type='revolute'>
+      <pose relative_to='base_link'>-0.111650000000003 -0.060999999999999499 -0.0144000000000178 1.5707963267949201 5.5511151231257827e-17 1.5707963267949003</pose>
+      <parent>base_link</parent>
+      <child>RR_link1</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-0.78539800000000004</lower>
+          <upper>0.78539800000000004</upper>
+          <effort>100</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='RR_link1'>
+      <pose relative_to='RR_theta1'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.29999999999999999</mass>
+        <inertia>
+          <ixx>0.000193</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00014889999999999999</iyy>
+          <iyz>0</iyz>
+          <izz>0.00012410000000000001</izz>
+        </inertia>
+      </inertial>
+      <collision name='RR_link1_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/R_link1_collision.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='RR_link1_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/RR_link1.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='RR_theta2' type='revolute'>
+      <pose relative_to='RR_link1'>-0.0495999992169147 0.0144000000000178 0 1.5707963201061221 1.5707957213234747 -1.5707963334836712</pose>
+      <parent>RR_link1</parent>
+      <child>RR_link2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-3</lower>
+          <upper>3</upper>
+          <effort>100</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='RR_link2'>
+      <pose relative_to='RR_theta2'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.10000000000000001</mass>
+        <inertia>
+          <ixx>6.9999999999999999e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>4.4399999999999998e-06</ixz>
+          <iyy>0.00017259999999999999</iyy>
+          <iyz>0</iyz>
+          <izz>0.00017568</izz>
+        </inertia>
+      </inertial>
+      <collision name='RR_link2_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/R_link2_collision.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='RR_link2_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/R_link2.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='RR_theta3' type='revolute'>
+      <pose relative_to='RR_link2'>0.13000000353672 0 0 0 0 1.5707959843897801</pose>
+      <parent>RR_link2</parent>
+      <child>RR_link3</child>
+      <axis>
+        <xyz>0 0 0.999999999999998</xyz>
+        <limit>
+          <lower>-3</lower>
+          <upper>3</upper>
+          <effort>100</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='RR_link3'>
+      <pose relative_to='RR_theta3'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.023022774392071829 0 0 0 0 0</pose>
+        <mass>0.12</mass>
+        <inertia>
+          <ixx>9.9599999999999995e-06</ixx>
+          <ixy>-1.3730000000000001e-05</ixy>
+          <ixz>-3.19e-06</ixz>
+          <iyy>0.00051607888442494322</iyy>
+          <iyz>-2.7000000000000001e-07</iyz>
+          <izz>0.0005154988844249432</izz>
+        </inertia>
+      </inertial>
+      <collision name='RR_link3_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/R_link3_collision.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='RR_link3_fixed_joint_lump__RR_link4_collision_1'>
+        <pose>0.138136646352431 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/link4_collision.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1000000</kp>
+              <kd>100</kd>
+              <min_depth>0.00020000000000000001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='RR_link3_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/R_link3.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='RR_link3_fixed_joint_lump__RR_link4_visual_1'>
+        <pose>0.138136646352431 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://dingo_description/meshes/link4.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
+      <robotNamespace>dingo_controller</robotNamespace>
+    </plugin>
+    <plugin name='joint_state_publisher' filename='libgazebo_ros_joint_state_publisher.so'>
+      <robotNamespace>dingo_gazebo</robotNamespace>
+      <jointName>FR_theta1, FR_theta2, FR_theta3, FL_theta1, FL_theta2,
+        FL_theta3, RR_theta1, RR_theta2, RR_theta3, RL_theta1,
+        RL_theta2, RL_theta3</jointName>
+      <updateRate>100</updateRate>
+    </plugin>
+    <frame name='FL_foot' attached_to='FL_link3'>
+      <pose>0.13813664635228801 0 0 0 0 0</pose>
+    </frame>
+    <frame name='FL_link4' attached_to='FL_foot'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='FR_foot' attached_to='FR_link3'>
+      <pose>0.13813664635243 0 0 0 0 0</pose>
+    </frame>
+    <frame name='FR_link4' attached_to='FR_foot'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='RL_foot' attached_to='RL_link3'>
+      <pose>0.13813664635232301 0 0 0 0 0</pose>
+    </frame>
+    <frame name='RL_link4' attached_to='RL_foot'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='RR_foot' attached_to='RR_link3'>
+      <pose>0.138136646352431 0 0 0 0 0</pose>
+    </frame>
+    <frame name='RR_link4' attached_to='RR_foot'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+  </model>
+</sdf>

@@ -23,7 +23,6 @@
   asked CMake to find a package configuration file provided by "catkin", but
   CMake did not find one.
 
--- Configuring incomplete, errors occurred!
   Could not find a package configuration file provided by "catkin" with any
   of the following names:
 
@@ -36,3 +35,4 @@
   installed.
 
 [0m
+-- Configuring incomplete, errors occurred!

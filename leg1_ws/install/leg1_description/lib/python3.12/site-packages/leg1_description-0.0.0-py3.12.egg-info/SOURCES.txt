@@ -20,6 +20,8 @@ resource/leg1_description
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
+urdf/dingo.sdf
+urdf/dingo.urdf
 urdf/install
 urdf/leg1.gazebo
 urdf/leg1.sdf
