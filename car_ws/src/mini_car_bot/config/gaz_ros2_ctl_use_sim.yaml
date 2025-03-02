@@ -1,0 +1,4 @@
+controller_manager:
+  ros__parameters:
+    use_sim_time: true
+#this is only made to set use_sim_time to true for gazebo simulations
