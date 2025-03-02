@@ -1,9 +1,0 @@
-/home/vtcro/car_robot_ws/build/my_robot_pkg2/CMakeFiles/uninstall.dir
-/home/vtcro/car_robot_ws/build/my_robot_pkg2/CMakeFiles/my_robot_pkg2_uninstall.dir
-/home/vtcro/car_robot_ws/build/my_robot_pkg2/CMakeFiles/test.dir
-/home/vtcro/car_robot_ws/build/my_robot_pkg2/CMakeFiles/edit_cache.dir
-/home/vtcro/car_robot_ws/build/my_robot_pkg2/CMakeFiles/rebuild_cache.dir
-/home/vtcro/car_robot_ws/build/my_robot_pkg2/CMakeFiles/list_install_components.dir
-/home/vtcro/car_robot_ws/build/my_robot_pkg2/CMakeFiles/install.dir
-/home/vtcro/car_robot_ws/build/my_robot_pkg2/CMakeFiles/install/local.dir
-/home/vtcro/car_robot_ws/build/my_robot_pkg2/CMakeFiles/install/strip.dir

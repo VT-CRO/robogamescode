@@ -1,1 +1,0 @@
-/home/vtcro/car_robot_ws/src/mini_car_bot/launch/launch_sim.launch.py

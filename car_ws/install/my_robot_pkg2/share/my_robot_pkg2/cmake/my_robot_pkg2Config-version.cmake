@@ -1,1 +1,0 @@
-/home/vtcro/car_robot_ws/build/my_robot_pkg2/ament_cmake_core/my_robot_pkg2Config-version.cmake
