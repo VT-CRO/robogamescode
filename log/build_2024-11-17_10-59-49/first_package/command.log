@@ -1,0 +1,1 @@
+Invoking command in '/home/youssefchebil/dev_ws/build/first_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youssefchebil/dev_ws/build/first_package -- -j5 -l5

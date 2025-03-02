@@ -1,0 +1,25 @@
+-- Found ament_cmake: 2.5.2 (/home/youssefchebil/ros2_jazzy_linux/ros2-linux/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.17.1 (/home/youssefchebil/ros2_jazzy_linux/ros2-linux/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/youssefchebil/dev_ws/build/first_package
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/youssefchebil/dev_ws/install/first_package/share/first_package/launch/__pycache__/description.launch.cpython-312.pyc
+-- Symlinking: /home/youssefchebil/dev_ws/install/first_package/share/first_package/launch/check_joint.rviz
+-- Up-to-date symlink: /home/youssefchebil/dev_ws/install/first_package/share/first_package/launch/description.launch.py
+-- Up-to-date symlink: /home/youssefchebil/dev_ws/install/first_package/share/first_package/launch/display.launch.py
+-- Symlinking: /home/youssefchebil/dev_ws/install/first_package/share/first_package/launch/gazebo.launch
+-- Symlinking: /home/youssefchebil/dev_ws/install/first_package/share/first_package/launch/go2_rviz.launch
+-- Up-to-date symlink: /home/youssefchebil/dev_ws/install/first_package/share/first_package/launch/listener.launch.py
+-- Up-to-date symlink: /home/youssefchebil/dev_ws/install/first_package/share/first_package/launch/robot_display.launch.py
+-- Up-to-date symlink: /home/youssefchebil/dev_ws/install/first_package/share/first_package/launch/talker.launch.py
+-- Symlinking: /home/youssefchebil/dev_ws/install/first_package/share/first_package/urdf/example_robot.urdf.xacro
+-- Symlinking: /home/youssefchebil/dev_ws/install/first_package/share/first_package/urdf/robot.urdf
+-- Symlinking: /home/youssefchebil/dev_ws/install/first_package/share/first_package/urdf/unitree_go2_description.urdf
