@@ -1,0 +1,1 @@
+/home/vtcro/car_robot_ws/build/mini_car_bot/ament_cmake_environment_hooks/local_setup.bash

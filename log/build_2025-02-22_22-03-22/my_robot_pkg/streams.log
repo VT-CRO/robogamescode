@@ -1,0 +1,22 @@
+[0.741s] Invoking command in '/home/vtcro/car_robot_ws/build/my_robot_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vtcro/car_robot_ws/build/my_robot_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vtcro/car_robot_ws/install/my_robot_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vtcro/car_robot_ws/build/my_robot_pkg/build --no-deps symlink_data
+[1.047s] running develop
+[1.268s] running egg_info
+[1.268s] creating my_robot_pkg.egg-info
+[1.286s] writing my_robot_pkg.egg-info/PKG-INFO
+[1.286s] writing dependency_links to my_robot_pkg.egg-info/dependency_links.txt
+[1.287s] writing requirements to my_robot_pkg.egg-info/requires.txt
+[1.287s] writing top-level names to my_robot_pkg.egg-info/top_level.txt
+[1.287s] writing manifest file 'my_robot_pkg.egg-info/SOURCES.txt'
+[1.324s] reading manifest file 'my_robot_pkg.egg-info/SOURCES.txt'
+[1.325s] writing manifest file 'my_robot_pkg.egg-info/SOURCES.txt'
+[1.344s] running build_ext
+[1.344s] Creating /home/vtcro/car_robot_ws/install/my_robot_pkg/lib/python3.12/site-packages/my-robot-pkg.egg-link (link to .)
+[1.345s] 
+[1.345s] Installed /home/vtcro/car_robot_ws/build/my_robot_pkg
+[1.345s] running symlink_data
+[1.345s] creating /home/vtcro/car_robot_ws/install/my_robot_pkg/share/ament_index
+[1.345s] creating /home/vtcro/car_robot_ws/install/my_robot_pkg/share/ament_index/resource_index
+[1.345s] creating /home/vtcro/car_robot_ws/install/my_robot_pkg/share/ament_index/resource_index/packages
+[1.345s] symbolically linking /home/vtcro/car_robot_ws/build/my_robot_pkg/resource/my_robot_pkg -> /home/vtcro/car_robot_ws/install/my_robot_pkg/share/ament_index/resource_index/packages
+[1.345s] symbolically linking /home/vtcro/car_robot_ws/build/my_robot_pkg/package.xml -> /home/vtcro/car_robot_ws/install/my_robot_pkg/share/my_robot_pkg
+[1.366s] Invoked command in '/home/vtcro/car_robot_ws/build/my_robot_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vtcro/car_robot_ws/build/my_robot_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vtcro/car_robot_ws/install/my_robot_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vtcro/car_robot_ws/build/my_robot_pkg/build --no-deps symlink_data
