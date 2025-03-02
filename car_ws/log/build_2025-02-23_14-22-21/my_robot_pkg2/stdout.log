@@ -1,0 +1,17 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/ament_index/resource_index/package_run_dependencies/my_robot_pkg2
+-- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/ament_index/resource_index/parent_prefix_path/my_robot_pkg2
+-- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/path.sh
+-- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/environment/path.dsv
+-- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.bash
+-- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.sh
+-- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.zsh
+-- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/local_setup.dsv
+-- Symlinking: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/package.dsv
+-- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/ament_index/resource_index/packages/my_robot_pkg2
+-- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/cmake/my_robot_pkg2Config.cmake
+-- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/cmake/my_robot_pkg2Config-version.cmake
+-- Up-to-date symlink: /home/vtcro/car_robot_ws/install/my_robot_pkg2/share/my_robot_pkg2/package.xml
