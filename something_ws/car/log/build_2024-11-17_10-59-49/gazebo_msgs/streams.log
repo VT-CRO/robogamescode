@@ -1,0 +1,28 @@
+[0.026s] Invoking command in '/home/youssefchebil/dev_ws/build/gazebo_msgs': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/youssefchebil/dev_ws/src/gazebo_ros_pkgs/gazebo_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/youssefchebil/dev_ws/install/gazebo_msgs
+[0.060s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.060s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.060s]   CMake.
+[0.060s] 
+[0.060s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.060s]   CMake that the project does not need compatibility with older versions.
+[0.060s] 
+[0.060s] [0m
+[0.078s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[0.078s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.078s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.078s]   CMake did not find one.
+[0.078s] 
+[0.078s]   Could not find a package configuration file provided by "catkin" with any
+[0.079s]   of the following names:
+[0.079s] 
+[0.079s]     catkinConfig.cmake
+[0.079s]     catkin-config.cmake
+[0.079s] 
+[0.079s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.079s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.079s]   provides a separate development package or SDK, be sure it has been
+[0.079s]   installed.
+[0.079s] 
+[0.079s] [0m
+[0.079s] -- Configuring incomplete, errors occurred!
+[0.086s] Invoked command in '/home/youssefchebil/dev_ws/build/gazebo_msgs' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/youssefchebil/dev_ws/src/gazebo_ros_pkgs/gazebo_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/youssefchebil/dev_ws/install/gazebo_msgs

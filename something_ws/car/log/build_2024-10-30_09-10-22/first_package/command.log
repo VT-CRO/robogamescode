@@ -1,0 +1,2 @@
+Invoking command in '/home/youssefchebil/dev_ws/build/first_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youssefchebil/dev_ws/build/first_package -- -j5 -l5
+Invoked command in '/home/youssefchebil/dev_ws/build/first_package' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/youssefchebil/dev_ws/build/first_package -- -j5 -l5

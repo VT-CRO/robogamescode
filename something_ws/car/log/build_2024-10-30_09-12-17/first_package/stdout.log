@@ -1,0 +1,4 @@
+-- Found ament_cmake: 2.5.2 (/home/youssefchebil/ros2_jazzy_linux/ros2-linux/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.17.1 (/home/youssefchebil/ros2_jazzy_linux/ros2-linux/share/ament_lint_auto/cmake)
+-- Configuring incomplete, errors occurred!
