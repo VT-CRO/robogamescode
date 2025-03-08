@@ -26,6 +26,8 @@
       filename="gz-sim-contact-system"
       name="gz::sim::systems::Contact">
     </plugin>
+
+
     <light type="directional" name="sun">
       <cast_shadows>true</cast_shadows>
       <pose>10 0 10 0 0 0</pose>
@@ -42,7 +44,6 @@
 
     <!-- ================== Ground =========================== -->
 
-    <!-- Ground Model -->
     <model name="ground">
       <static>true</static>
       <link name="ground_link">
@@ -58,7 +59,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>100000 100000</size>
+              <size>500000 500000</size>
             </plane>
           </geometry>
         </visual>
