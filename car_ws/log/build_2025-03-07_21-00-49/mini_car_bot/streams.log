@@ -1,0 +1,88 @@
+[0.012s] Invoking command in '/home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot
+[0.082s] -- The C compiler identification is GNU 13.3.0
+[0.152s] -- The CXX compiler identification is GNU 13.3.0
+[0.172s] -- Detecting C compiler ABI info
+[0.263s] -- Detecting C compiler ABI info - done
+[0.269s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.269s] -- Detecting C compile features
+[0.270s] -- Detecting C compile features - done
+[0.279s] -- Detecting CXX compiler ABI info
+[0.374s] -- Detecting CXX compiler ABI info - done
+[0.382s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.382s] -- Detecting CXX compile features
+[0.382s] -- Detecting CXX compile features - done
+[0.386s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.523s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.630s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.721s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.721s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.722s] -- Added test 'lint_cmake' to check CMake code style
+[0.723s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.725s] -- Added test 'xmllint' to check XML markup files
+[0.727s] -- Configuring done (0.7s)
+[0.730s] -- Generating done (0.0s)
+[0.731s] -- Build files have been written to: /home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot
+[0.737s] Invoked command in '/home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot
+[0.738s] Invoking command in '/home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot -- -j16 -l16
+[0.782s] Invoked command in '/home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot -- -j16 -l16
+[0.792s] Invoking command in '/home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot
+[0.800s] -- Install configuration: ""
+[0.800s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/config
+[0.800s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/config/twist_mux.yaml
+[0.800s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/config/gaz_ros2_ctl_use_sim.yaml
+[0.800s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/config/gz_bridge.yaml
+[0.801s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/config/view_bot.rviz
+[0.801s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/config/mapper_params_online_async.yaml
+[0.801s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/config/my_controllers.yaml
+[0.801s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/description
+[0.801s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/description/robot.urdf.xacro
+[0.801s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/description/inertial_macros.xacro
+[0.801s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/description/camera.xacro
+[0.801s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/description/gazebo_control.xacro
+[0.801s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/description/depth_camera.xacro
+[0.801s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/description/lidar.xacro
+[0.801s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/description/ros2_control.xacro
+[0.801s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/description/robot.core.xacro
+[0.801s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch
+[0.802s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch/rsp.launch.py
+[0.802s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch/launch_sim.launch.py
+[0.802s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch/rplidar.launch.py
+[0.802s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch/online_async_launch.py
+[0.802s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch/launch_robot.launch.py
+[0.802s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch/camera.launch.py
+[0.802s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch/joystick.launch.py
+[0.802s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds
+[0.803s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/prev_empty.world
+[0.803s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/model.sdf
+[0.803s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/simple.world
+[0.803s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/model.config
+[0.803s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/empty.world
+[0.803s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/meshes
+[0.803s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/meshes/yellow3.stl
+[0.803s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/meshes/red2.stl
+[0.803s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/meshes/yellow2.stl
+[0.804s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/meshes/yellow1.stl
+[0.804s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/meshes/yellow5.stl
+[0.805s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/meshes/blue.stl
+[0.805s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/meshes/block.stl
+[0.806s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/meshes/wood.stl
+[0.806s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/meshes/red1.stl
+[0.806s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/meshes/yellow4.stl
+[0.806s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/meshes/ramp.stl
+[0.806s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/worlds/meshes/world1.stl
+[0.808s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/ament_index/resource_index/package_run_dependencies/mini_car_bot
+[0.808s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/ament_index/resource_index/parent_prefix_path/mini_car_bot
+[0.808s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/environment/ament_prefix_path.sh
+[0.809s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/environment/ament_prefix_path.dsv
+[0.809s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/environment/path.sh
+[0.809s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/environment/path.dsv
+[0.809s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/local_setup.bash
+[0.809s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/local_setup.sh
+[0.809s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/local_setup.zsh
+[0.809s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/local_setup.dsv
+[0.809s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/package.dsv
+[0.809s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/ament_index/resource_index/packages/mini_car_bot
+[0.810s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/cmake/mini_car_botConfig.cmake
+[0.810s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/cmake/mini_car_botConfig-version.cmake
+[0.810s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/package.xml
+[0.812s] Invoked command in '/home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot
