@@ -98,13 +98,13 @@
 		{
 			"backtrace" : 9,
 			"isGenerated" : true,
-			"path" : "/home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot/CMakeFiles/mini_car_bot_uninstall",
+			"path" : "/home/lab/vt-cro/robogamescode/car_ws/build/mini_car_bot/CMakeFiles/mini_car_bot_uninstall",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot/CMakeFiles/mini_car_bot_uninstall.rule",
+			"path" : "/home/lab/vt-cro/robogamescode/car_ws/build/mini_car_bot/CMakeFiles/mini_car_bot_uninstall.rule",
 			"sourceGroupIndex" : 1
 		}
 	],
