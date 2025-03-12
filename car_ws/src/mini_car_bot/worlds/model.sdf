@@ -47,7 +47,7 @@
         <visual name="visual1">
           <geometry>
             <mesh>
-              <uri>file:///home/vtcro/car_robot_ws/src/mini_car_bot/worlds/meshes/yellow1.stl</uri>
+              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/yellow1.stl</uri>
             </mesh>
           </geometry>
           <material>
@@ -67,6 +67,7 @@
   <pose>0 0 0 0 0 0</pose>
   <link name="body">
 
+<<<<<<< HEAD
     <!-- Collision -->
     <collision name="collision1">
       <geometry>
@@ -101,6 +102,22 @@
 
   </link>
 </model>
+=======
+        <!-- Visual with Mesh -->
+        <visual name="visual1">
+          <geometry>
+            <mesh>
+              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/yellow2.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
+            <diffuse>1 1 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+>>>>>>> 7ebf4570156552ba0d11e55ffcb117912665140b
 
     <!-- ================== Yellow Cylinder 2 Model =========================== -->
 
@@ -146,6 +163,23 @@
   </link>
 </model>
 
+<<<<<<< HEAD
+=======
+        <!-- Visual with Mesh -->
+        <visual name="visual1">
+          <geometry>
+            <mesh>
+              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/yellow3.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
+            <diffuse>1 1 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+>>>>>>> 7ebf4570156552ba0d11e55ffcb117912665140b
 
     <!-- ================== Yellow Cylinder 3 Model =========================== -->
 
@@ -191,6 +225,23 @@
   </link>
 </model>
 
+<<<<<<< HEAD
+=======
+        <!-- Visual with Mesh -->
+        <visual name="visual1">
+          <geometry>
+            <mesh>
+              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/yellow4.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
+            <diffuse>1 1 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+>>>>>>> 7ebf4570156552ba0d11e55ffcb117912665140b
 
     <!-- ================== Yellow Cylinder 4 Model =========================== -->
 
@@ -236,6 +287,23 @@
   </link>
 </model>
 
+<<<<<<< HEAD
+=======
+        <!-- Visual with Mesh -->
+        <visual name="visual1">
+          <geometry>
+            <mesh>
+              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/yellow5.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
+            <diffuse>1 1 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+>>>>>>> 7ebf4570156552ba0d11e55ffcb117912665140b
 
     <!-- ================== Yellow Cylinder 5 Model =========================== -->
 
@@ -281,6 +349,23 @@
   </link>
 </model>
 
+<<<<<<< HEAD
+=======
+        <!-- Visual with Mesh -->
+        <visual name="visual1">
+          <geometry>
+            <mesh>
+              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/blue.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0 0 1 1</ambient> <!-- Blue Color -->
+            <diffuse>0 0 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+>>>>>>> 7ebf4570156552ba0d11e55ffcb117912665140b
 
     <!-- ================== Blue Cylinder Model =========================== -->
 
@@ -326,6 +411,23 @@
   </link>
 </model>
 
+<<<<<<< HEAD
+=======
+        <!-- Visual with Mesh -->
+        <visual name="visual1">
+          <geometry>
+            <mesh>
+              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/red1.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient> <!-- Red Color -->
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+>>>>>>> 7ebf4570156552ba0d11e55ffcb117912665140b
 
     <!-- ================== Red Cylinder 1 Model =========================== -->
 
@@ -371,6 +473,23 @@
   </link>
 </model>
 
+<<<<<<< HEAD
+=======
+        <!-- Visual with Mesh -->
+        <visual name="visual1">
+          <geometry>
+            <mesh>
+              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/red2.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient> <!-- Red Color -->
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+>>>>>>> 7ebf4570156552ba0d11e55ffcb117912665140b
 
     <!-- ================== Red Cylinder 2 Model =========================== -->
 
@@ -416,6 +535,24 @@
   </link>
 </model>
 
+<<<<<<< HEAD
+=======
+        <!-- Visual with Mesh -->
+        <visual name="visual1">
+          <geometry>
+            <mesh>
+              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/wood.stl</uri>
+              <scale>1 1 1</scale>  <!-- Adjust if needed -->
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 1</ambient> <!-- Brown Color -->
+            <diffuse>0.5 0.25 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+>>>>>>> 7ebf4570156552ba0d11e55ffcb117912665140b
 
     <!-- ================== Wood Model =========================== -->
 
@@ -444,6 +581,7 @@
       </surface>
     </collision>
 
+<<<<<<< HEAD
     <!-- Visual -->
     <visual name="visual1">
       <geometry>
@@ -459,6 +597,23 @@
     </visual>
   </link>
 </model>
+=======
+        <!-- Visual with Mesh -->
+        <visual name="visual1">
+          <geometry>
+            <mesh>
+              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/block.stl</uri>
+              <scale>1 1 1</scale>  <!-- Adjust if needed -->
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient> <!-- Gray Color -->
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+>>>>>>> 7ebf4570156552ba0d11e55ffcb117912665140b
 
     <!-- ================== Block Model =========================== -->
 
@@ -487,6 +642,7 @@
       </surface>
     </collision>
 
+<<<<<<< HEAD
     <!-- Visual -->
     <visual name="visual1">
       <geometry>
@@ -502,6 +658,23 @@
     </visual>
   </link>
 </model>
+=======
+        <!-- Visual with Mesh -->
+        <visual name="visual1">
+          <geometry>
+            <mesh>
+              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/ramp.stl</uri>
+              <scale>1 1 1</scale>  <!-- Adjust if needed -->
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.5 0.25 0 1</ambient> <!-- Brown Color -->
+            <diffuse>0.5 0.25 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+>>>>>>> 7ebf4570156552ba0d11e55ffcb117912665140b
 
     <!-- ================== Ramp Model =========================== -->
 
