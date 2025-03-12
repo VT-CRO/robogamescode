@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lab/vt-cro/robogamescode/car_ws/src/articubot_one
+CMAKE_SOURCE_DIR = /home/lab/vt-cro/robogamescode/car_ws/src/tmp
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/lab/vt-cro/robogamescode/car_ws/build/articubot_one

@@ -392,7 +392,7 @@ articubot_one_BINARY_DIR:STATIC=/home/lab/vt-cro/robogamescode/car_ws/build/arti
 articubot_one_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-articubot_one_SOURCE_DIR:STATIC=/home/lab/vt-cro/robogamescode/car_ws/src/articubot_one
+articubot_one_SOURCE_DIR:STATIC=/home/lab/vt-cro/robogamescode/car_ws/src/tmp
 
 //The directory containing a CMake configuration file for builtin_interfaces.
 builtin_interfaces_DIR:PATH=/opt/ros/jazzy/share/builtin_interfaces/cmake
@@ -641,7 +641,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/lab/vt-cro/robogamescode/car_ws/src/articubot_one
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/lab/vt-cro/robogamescode/car_ws/src/tmp
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
