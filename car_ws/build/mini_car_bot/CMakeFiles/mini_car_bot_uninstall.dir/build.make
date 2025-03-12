@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lab/vt-cro/robogamescode/car_ws/src/mini_car_bot
+CMAKE_SOURCE_DIR = /home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lab/vt-cro/robogamescode/car_ws/build/mini_car_bot
+CMAKE_BINARY_DIR = /home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot
 
 # Utility rule file for mini_car_bot_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/mini_car_bot_uninstall.dir/compiler_depend.make
 include CMakeFiles/mini_car_bot_uninstall.dir/progress.make
 
 CMakeFiles/mini_car_bot_uninstall:
-	/usr/bin/cmake -P /home/lab/vt-cro/robogamescode/car_ws/build/mini_car_bot/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 mini_car_bot_uninstall: CMakeFiles/mini_car_bot_uninstall
 mini_car_bot_uninstall: CMakeFiles/mini_car_bot_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/mini_car_bot_uninstall.dir/clean:
 .PHONY : CMakeFiles/mini_car_bot_uninstall.dir/clean
 
 CMakeFiles/mini_car_bot_uninstall.dir/depend:
-	cd /home/lab/vt-cro/robogamescode/car_ws/build/mini_car_bot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lab/vt-cro/robogamescode/car_ws/src/mini_car_bot /home/lab/vt-cro/robogamescode/car_ws/src/mini_car_bot /home/lab/vt-cro/robogamescode/car_ws/build/mini_car_bot /home/lab/vt-cro/robogamescode/car_ws/build/mini_car_bot /home/lab/vt-cro/robogamescode/car_ws/build/mini_car_bot/CMakeFiles/mini_car_bot_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot /home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot /home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot /home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot /home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot/CMakeFiles/mini_car_bot_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/mini_car_bot_uninstall.dir/depend
 
