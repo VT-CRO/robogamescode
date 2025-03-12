@@ -42,6 +42,8 @@
 -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch/rsp.launch.py
 -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch/launch_sim.launch.py
 -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch/rplidar.launch.py
+-- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch/__pycache__
+-- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch/__pycache__/joystick.launch.cpython-312.pyc
 -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch/online_async_launch.py
 -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch/launch_robot.launch.py
 -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/launch/camera.launch.py
