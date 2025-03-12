@@ -12,8 +12,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
   "ament_cmake_core/package.cmake"
   "ament_cmake_package_templates/templates.cmake"
+<<<<<<< HEAD
   "/home/houndsito/vt-cro/robogamescode/car_ws/src/tmp/CMakeLists.txt"
   "/home/houndsito/vt-cro/robogamescode/car_ws/src/tmp/package.xml"
+=======
+  "/home/lab/vt-cro/robogamescode/car_ws/src/tmp/CMakeLists.txt"
+  "/home/lab/vt-cro/robogamescode/car_ws/src/tmp/package.xml"
+>>>>>>> bffa34cc4d2e80b9ee4c00295ab6b34fe4980d59
   "/opt/ros/jazzy/lib/cmake/fastcdr/fastcdr-config-version.cmake"
   "/opt/ros/jazzy/lib/cmake/fastcdr/fastcdr-config.cmake"
   "/opt/ros/jazzy/lib/cmake/fastcdr/fastcdr-shared-targets-none.cmake"

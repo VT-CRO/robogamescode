@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /home/houndsito/vt-cro/robogamescode/car_ws/src/tmp
+=======
+# Install script for directory: /home/lab/vt-cro/robogamescode/car_ws/src/tmp
+>>>>>>> bffa34cc4d2e80b9ee4c00295ab6b34fe4980d59
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,16 +47,28 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+<<<<<<< HEAD
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/articubot_one" TYPE PROGRAM FILES "/home/houndsito/vt-cro/robogamescode/car_ws/src/tmp/src/depth_to_scan.py")
+=======
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/articubot_one" TYPE PROGRAM FILES "/home/lab/vt-cro/robogamescode/car_ws/src/tmp/src/depth_to_scan.py")
+>>>>>>> bffa34cc4d2e80b9ee4c00295ab6b34fe4980d59
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/articubot_one" TYPE DIRECTORY FILES
+<<<<<<< HEAD
     "/home/houndsito/vt-cro/robogamescode/car_ws/src/tmp/config"
     "/home/houndsito/vt-cro/robogamescode/car_ws/src/tmp/description"
     "/home/houndsito/vt-cro/robogamescode/car_ws/src/tmp/launch"
     "/home/houndsito/vt-cro/robogamescode/car_ws/src/tmp/worlds"
     "/home/houndsito/vt-cro/robogamescode/car_ws/src/tmp/maps"
+=======
+    "/home/lab/vt-cro/robogamescode/car_ws/src/tmp/config"
+    "/home/lab/vt-cro/robogamescode/car_ws/src/tmp/description"
+    "/home/lab/vt-cro/robogamescode/car_ws/src/tmp/launch"
+    "/home/lab/vt-cro/robogamescode/car_ws/src/tmp/worlds"
+    "/home/lab/vt-cro/robogamescode/car_ws/src/tmp/maps"
+>>>>>>> bffa34cc4d2e80b9ee4c00295ab6b34fe4980d59
     )
 endif()
 
@@ -112,7 +128,11 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+<<<<<<< HEAD
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/articubot_one" TYPE FILE FILES "/home/houndsito/vt-cro/robogamescode/car_ws/src/tmp/package.xml")
+=======
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/articubot_one" TYPE FILE FILES "/home/lab/vt-cro/robogamescode/car_ws/src/tmp/package.xml")
+>>>>>>> bffa34cc4d2e80b9ee4c00295ab6b34fe4980d59
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
