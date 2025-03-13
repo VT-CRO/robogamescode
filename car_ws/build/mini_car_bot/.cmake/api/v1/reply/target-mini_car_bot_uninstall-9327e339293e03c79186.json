@@ -24,7 +24,7 @@
 			{
 				"command" : 2,
 				"file" : 4,
-				"line" : 19,
+				"line" : 9,
 				"parent" : 0
 			},
 			{
@@ -69,8 +69,8 @@
 			}
 		]
 	},
-	"id" : "articubot_one_uninstall::@6890427a1f51a3e7e1df",
-	"name" : "articubot_one_uninstall",
+	"id" : "mini_car_bot_uninstall::@6890427a1f51a3e7e1df",
+	"name" : "mini_car_bot_uninstall",
 	"paths" : 
 	{
 		"build" : ".",
@@ -98,13 +98,13 @@
 		{
 			"backtrace" : 9,
 			"isGenerated" : true,
-			"path" : "/home/lab/vt-cro/robogamescode/car_ws/build/articubot_one/CMakeFiles/articubot_one_uninstall",
+			"path" : "/home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot/CMakeFiles/mini_car_bot_uninstall",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/lab/vt-cro/robogamescode/car_ws/build/articubot_one/CMakeFiles/articubot_one_uninstall.rule",
+			"path" : "/home/houndsito/vt-cro/robogamescode/car_ws/build/mini_car_bot/CMakeFiles/mini_car_bot_uninstall.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

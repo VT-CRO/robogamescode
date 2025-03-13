@@ -47,7 +47,7 @@
         <visual name="visual1">
           <geometry>
             <mesh>
-              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/yellow1.stl</uri>
+              <uri>file:///home/vtcro/car_robot_ws/src/mini_car_bot/worlds/meshes/yellow1.stl</uri>
             </mesh>
           </geometry>
           <material>
@@ -61,342 +61,447 @@
     <!-- ================== Yellow Cylinder 1 Model =========================== -->
 
 
+<!-- ================== Yellow Cylinder 2 Model =========================== -->
+
+<model name="yellow_cylinder2">
+  <pose>0 0 0 0 0 0</pose>
+  <link name="body">
+
+    <!-- Collision -->
+    <collision name="collision1">
+      <geometry>
+        <cylinder>
+          <radius>0.5</radius>
+          <length>1.0</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact>
+          <ode>
+            <bounce>0.8</bounce> <!-- Adjust for bounciness -->
+            <mu>0.5</mu> <!-- Friction coefficient -->
+            <mu2>0.5</mu2>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
+
+    <!-- Visual with Mesh -->
+    <visual name="visual1">
+      <geometry>
+        <mesh>
+          <uri>file:///home/vtcro/car_robot_ws/src/mini_car_bot/worlds/meshes/yellow2.stl</uri>
+        </mesh>
+      </geometry>
+      <material>
+        <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
+        <diffuse>1 1 0 1</diffuse>
+      </material>
+    </visual>
+
+  </link>
+</model>
+
     <!-- ================== Yellow Cylinder 2 Model =========================== -->
 
-    <model name="yellow_cylinder2">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>1.0</length>
-            </cylinder>
-          </geometry>
-        </collision>
 
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
-          <geometry>
-            <mesh>
-              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/yellow2.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
-            <diffuse>1 1 0 1</diffuse>
-          </material>
-        </visual>
-      </link>
-    </model>
+<!-- ================== Yellow Cylinder 3 Model =========================== -->
 
-    <!-- ================== Yellow Cylinder 2 Model =========================== -->
+<model name="yellow_cylinder3">
+  <pose>0 0 0 0 0 0</pose>
+  <link name="body">
+
+    <!-- Collision -->
+    <collision name="collision1">
+      <geometry>
+        <cylinder>
+          <radius>0.5</radius>
+          <length>1.0</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact>
+          <ode>
+            <bounce>0.8</bounce> <!-- Adjust for bounciness -->
+            <mu>0.5</mu> <!-- Friction coefficient -->
+            <mu2>0.5</mu2>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
+
+    <!-- Visual with Mesh -->
+    <visual name="visual1">
+      <geometry>
+        <mesh>
+          <uri>file:///home/vtcro/car_robot_ws/src/mini_car_bot/worlds/meshes/yellow3.stl</uri>
+        </mesh>
+      </geometry>
+      <material>
+        <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
+        <diffuse>1 1 0 1</diffuse>
+      </material>
+    </visual>
+
+  </link>
+</model>
 
 
     <!-- ================== Yellow Cylinder 3 Model =========================== -->
 
-    <model name="yellow_cylinder3">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>1.0</length>
-            </cylinder>
-          </geometry>
-        </collision>
 
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
-          <geometry>
-            <mesh>
-              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/yellow3.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
-            <diffuse>1 1 0 1</diffuse>
-          </material>
-        </visual>
-      </link>
-    </model>
+   <!-- ================== Yellow Cylinder 4 Model =========================== -->
 
-    <!-- ================== Yellow Cylinder 3 Model =========================== -->
+<model name="yellow_cylinder4">
+  <pose>0 0 0 0 0 0</pose>
+  <link name="body">
 
+    <!-- Collision -->
+    <collision name="collision1">
+      <geometry>
+        <cylinder>
+          <radius>0.5</radius>
+          <length>1.0</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact>
+          <ode>
+            <bounce>0.8</bounce> <!-- Object will bounce slightly on impact -->
+            <mu>0.5</mu> <!-- Friction coefficient (controls slipping) -->
+            <mu2>0.5</mu2>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
 
-    <!-- ================== Yellow Cylinder 4 Model =========================== -->
+    <!-- Visual with Mesh -->
+    <visual name="visual1">
+      <geometry>
+        <mesh>
+          <uri>file:///home/vtcro/car_robot_ws/src/mini_car_bot/worlds/meshes/yellow4.stl</uri>
+        </mesh>
+      </geometry>
+      <material>
+        <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
+        <diffuse>1 1 0 1</diffuse>
+      </material>
+    </visual>
 
-    <model name="yellow_cylinder4">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>1.0</length>
-            </cylinder>
-          </geometry>
-        </collision>
+  </link>
+</model>
 
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
-          <geometry>
-            <mesh>
-              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/yellow4.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
-            <diffuse>1 1 0 1</diffuse>
-          </material>
-        </visual>
-      </link>
-    </model>
 
     <!-- ================== Yellow Cylinder 4 Model =========================== -->
 
 
     <!-- ================== Yellow Cylinder 5 Model =========================== -->
 
-    <model name="yellow_cylinder5">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>1.0</length>
-            </cylinder>
-          </geometry>
-        </collision>
+<model name="yellow_cylinder4">
+  <pose>0 0 0 0 0 0</pose>
+  <link name="body">
 
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
-          <geometry>
-            <mesh>
-              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/yellow5.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
-            <diffuse>1 1 0 1</diffuse>
-          </material>
-        </visual>
-      </link>
-    </model>
+    <!-- Collision -->
+    <collision name="collision1">
+      <geometry>
+        <cylinder>
+          <radius>0.5</radius>
+          <length>1.0</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact>
+          <ode>
+            <bounce>0.8</bounce> <!-- Object will bounce slightly on impact -->
+            <mu>0.5</mu> <!-- Friction coefficient (controls slipping) -->
+            <mu2>0.5</mu2>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
+
+    <!-- Visual with Mesh -->
+    <visual name="visual1">
+      <geometry>
+        <mesh>
+          <uri>file:///home/vtcro/car_robot_ws/src/mini_car_bot/worlds/meshes/yellow5.stl</uri>
+        </mesh>
+      </geometry>
+      <material>
+        <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
+        <diffuse>1 1 0 1</diffuse>
+      </material>
+    </visual>
+
+  </link>
+</model>
+
 
     <!-- ================== Yellow Cylinder 5 Model =========================== -->
 
 
+<!-- ================== Blue Cylinder Model =========================== -->
+
+<model name="blue_cylinder">
+  <pose>0 0 0 0 0 0</pose>
+  <link name="body">
+
+    <!-- Collision -->
+    <collision name="collision1">
+      <geometry>
+        <cylinder>
+          <radius>0.5</radius>
+          <length>1.0</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact>
+          <ode>
+            <bounce>0.8</bounce> <!-- Slight bounce effect -->
+            <mu>0.5</mu> <!-- Friction coefficient -->
+            <mu2>0.5</mu2>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
+
+    <!-- Visual with Mesh -->
+    <visual name="visual1">
+      <geometry>
+        <mesh>
+          <uri>file:///home/vtcro/car_robot_ws/src/mini_car_bot/worlds/meshes/blue.stl</uri>
+        </mesh>
+      </geometry>
+      <material>
+        <ambient>0 0 1 1</ambient> <!-- Blue Color -->
+        <diffuse>0 0 1 1</diffuse>
+      </material>
+    </visual>
+
+  </link>
+</model>
+
+
     <!-- ================== Blue Cylinder Model =========================== -->
 
-    <model name="blue_cylinder">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>1.0</length>
-            </cylinder>
-          </geometry>
-        </collision>
 
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
-          <geometry>
-            <mesh>
-              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/blue.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <ambient>0 0 1 1</ambient> <!-- Blue Color -->
-            <diffuse>0 0 1 1</diffuse>
-          </material>
-        </visual>
-      </link>
-    </model>
+<!-- ================== Red Cylinder 1 Model =========================== -->
 
-    <!-- ================== Blue Cylinder Model =========================== -->
+<model name="red_cylinder1">
+  <pose>0 0 0 0 0 0</pose>
+  <link name="body">
+
+    <!-- Collision -->
+    <collision name="collision1">
+      <geometry>
+        <cylinder>
+          <radius>0.5</radius>
+          <length>1.0</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact>
+          <ode>
+            <bounce>0.8</bounce> <!-- Adds slight bounce on collision -->
+            <mu>0.5</mu> <!-- Primary friction -->
+            <mu2>0.5</mu2> <!-- Secondary friction -->
+          </ode>
+        </contact>
+      </surface>
+    </collision>
+
+    <!-- Visual with Mesh -->
+    <visual name="visual1">
+      <geometry>
+        <mesh>
+          <uri>file:///home/vtcro/car_robot_ws/src/mini_car_bot/worlds/meshes/red1.stl</uri>
+        </mesh>
+      </geometry>
+      <material>
+        <ambient>1 0 0 1</ambient> <!-- Red Color -->
+        <diffuse>1 0 0 1</diffuse>
+      </material>
+    </visual>
+
+  </link>
+</model>
 
 
     <!-- ================== Red Cylinder 1 Model =========================== -->
 
-    <model name="red_cylinder1">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>1.0</length>
-            </cylinder>
-          </geometry>
-        </collision>
 
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
-          <geometry>
-            <mesh>
-              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/red1.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <ambient>1 0 0 1</ambient> <!-- Red Color -->
-            <diffuse>1 0 0 1</diffuse>
-          </material>
-        </visual>
-      </link>
-    </model>
+   <!-- ================== Red Cylinder 2 Model =========================== -->
 
-    <!-- ================== Red Cylinder 1 Model =========================== -->
+<model name="red_cylinder1">
+  <pose>0 0 0 0 0 0</pose>
+  <link name="body">
+
+    <!-- Collision -->
+    <collision name="collision1">
+      <geometry>
+        <cylinder>
+          <radius>0.5</radius>
+          <length>1.0</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <contact>
+          <ode>
+            <bounce>0.8</bounce> <!-- Adds slight bounce on collision -->
+            <mu>0.5</mu> <!-- Primary friction -->
+            <mu2>0.5</mu2> <!-- Secondary friction -->
+          </ode>
+        </contact>
+      </surface>
+    </collision>
+
+    <!-- Visual with Mesh -->
+    <visual name="visual1">
+      <geometry>
+        <mesh>
+          <uri>file:///home/vtcro/car_robot_ws/src/mini_car_bot/worlds/meshes/red2.stl</uri>
+        </mesh>
+      </geometry>
+      <material>
+        <ambient>1 0 0 1</ambient> <!-- Red Color -->
+        <diffuse>1 0 0 1</diffuse>
+      </material>
+    </visual>
+
+  </link>
+</model>
 
 
     <!-- ================== Red Cylinder 2 Model =========================== -->
 
-    <model name="red_cylinder2">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>1.0</length>
-            </cylinder>
-          </geometry>
-        </collision>
 
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
-          <geometry>
-            <mesh>
-              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/red2.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <ambient>1 0 0 1</ambient> <!-- Red Color -->
-            <diffuse>1 0 0 1</diffuse>
-          </material>
-        </visual>
-      </link>
-    </model>
+<!-- ================== Wood Model =========================== -->
 
-    <!-- ================== Red Cylinder 2 Model =========================== -->
+<model name="wood">
+  <pose>0 0 0 0 0 0</pose>
+  <link name="body">
+    
+    <!-- Collision -->
+    <collision name="collision1">
+      <geometry>
+        <box>
+          <size>1 1 1</size>  <!-- Adjust size as needed -->
+        </box>
+      </geometry>
+      <surface>
+        <contact>
+          <ode>
+            <bounce>0.3</bounce> <!-- Adds slight bounce on collision -->
+            <mu>0.7</mu> <!-- Primary friction (prevents sliding) -->
+            <mu2>0.7</mu2> <!-- Secondary friction -->
+          </ode>
+        </contact>
+      </surface>
+    </collision>
+
+    <!-- Visual with Mesh -->
+    <visual name="visual1">
+      <geometry>
+        <mesh>
+          <uri>file:///home/vtcro/car_robot_ws/src/mini_car_bot/worlds/meshes/wood.stl</uri>
+          <scale>1 1 1</scale>  <!-- Adjust if needed -->
+        </mesh>
+      </geometry>
+      <material>
+        <ambient>0.5 0.25 0 1</ambient> <!-- Brown Color -->
+        <diffuse>0.5 0.25 0 1</diffuse>
+      </material>
+    </visual>
+
+  </link>
+</model>
 
 
     <!-- ================== Wood Model =========================== -->
 
-    <model name="wood">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
-          <geometry>
-            <box>
-            <size> 1 1 1</size>  <!-- Adjust size as needed -->
-            </box>
-          </geometry>
-        </collision>
 
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
-          <geometry>
-            <mesh>
-              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/wood.stl</uri>
-              <scale>1 1 1</scale>  <!-- Adjust if needed -->
-            </mesh>
-          </geometry>
-          <material>
-            <ambient>0.5 0.25 0 1</ambient> <!-- Brown Color -->
-            <diffuse>0.5 0.25 0 1</diffuse>
-          </material>
-        </visual>
-      </link>
-    </model>
+<!-- ================== Block Model =========================== -->
 
-    <!-- ================== Wood Model =========================== -->
+<model name="block">
+  <pose>0 0 0 0 0 0</pose> <!-- Keep at ground level -->
+  <static>true</static> <!-- Block should stay in place -->
+  <link name="body">
+    
+    <!-- Collision -->
+    <collision name="collision1">
+      <geometry>
+        <box>
+          <size>1 1 1</size>  <!-- Adjust size as needed -->
+        </box>
+      </geometry>
+      <surface>
+        <contact>
+          <ode>
+            <mu>0.8</mu> <!-- High friction -->
+            <mu2>0.8</mu2>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
 
-
-    <!-- ================== Block Model =========================== -->
-
-    <model name="block">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
-          <geometry>
-            <box>
-            <size> 1 1 1</size>  <!-- Adjust size as needed -->
-            </box>
-          </geometry>
-        </collision>
-
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
-          <geometry>
-            <mesh>
-              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/block.stl</uri>
-              <scale>1 1 1</scale>  <!-- Adjust if needed -->
-            </mesh>
-          </geometry>
-          <material>
-            <ambient>0.5 0.5 0.5 1</ambient> <!-- Gray Color -->
-            <diffuse>0.5 0.5 0.5 1</diffuse>
-          </material>
-        </visual>
-      </link>
-    </model>
+    <!-- Visual -->
+    <visual name="visual1">
+      <geometry>
+        <mesh>
+          <uri>file:///home/vtcro/car_robot_ws/src/mini_car_bot/worlds/meshes/block.stl</uri>
+          <scale>1 1 1</scale>
+        </mesh>
+      </geometry>
+      <material>
+        <ambient>0.5 0.5 0.5 1</ambient> <!-- Gray Color -->
+        <diffuse>0.5 0.5 0.5 1</diffuse>
+      </material>
+    </visual>
+  </link>
+</model>
 
     <!-- ================== Block Model =========================== -->
 
 
-    <!-- ================== Ramp Model =========================== -->
+   <!-- ================== Ramp Model =========================== -->
 
-    <model name="ramp">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
-          <geometry>
-            <box>
-            <size>1 1 1</size>  <!-- Adjust size as needed -->
-            </box>
-          </geometry>
-        </collision>
+<model name="ramp">
+  <pose>0 0.5 0.5 0 0 0.5</pose>  <!-- Positioned above the block -->
+  <static>false</static> <!-- Allow gravity to act -->
+  <link name="body">
+    
+    <!-- Collision -->
+    <collision name="collision1">
+      <geometry>
+        <box>
+          <size>1 2 0.2</size>  <!-- Ramp size: longer along Y -->
+        </box>
+      </geometry>
+      <surface>
+        <contact>
+          <ode>
+            <mu>0.6</mu> <!-- Slightly less friction for sliding -->
+            <mu2>0.6</mu2>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
 
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
-          <geometry>
-            <mesh>
-              <uri>file:///home/lab/vt-cro/robogames/car_ws/src/mini_car_bot/worlds/meshes/ramp.stl</uri>
-              <scale>1 1 1</scale>  <!-- Adjust if needed -->
-            </mesh>
-          </geometry>
-          <material>
-            <ambient>0.5 0.25 0 1</ambient> <!-- Brown Color -->
-            <diffuse>0.5 0.25 0 1</diffuse>
-          </material>
-        </visual>
-      </link>
-    </model>
+    <!-- Visual -->
+    <visual name="visual1">
+      <geometry>
+        <mesh>
+          <uri>file:///home/vtcro/car_robot_ws/src/mini_car_bot/worlds/meshes/ramp.stl</uri>
+          <scale>1 1 1</scale>
+        </mesh>
+      </geometry>
+      <material>
+        <ambient>0.5 0.25 0 1</ambient> <!-- Brown Color -->
+        <diffuse>0.5 0.25 0 1</diffuse>
+      </material>
+    </visual>
+  </link>
+</model>
 
     <!-- ================== Ramp Model =========================== -->
 
