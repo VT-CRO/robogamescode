@@ -51,9 +51,9 @@ def generate_launch_description():
     world = LaunchConfiguration('world')
 
     world_arg = DeclareLaunchArgument(
-        'world',
+        'world'
         default_value=default_world,
-        description='World to load'
+        description='simple.world'
         )
 
     # Include the Gazebo launch file, provided by the ros_gz_sim package
