@@ -392,7 +392,19 @@ articubot_one_BINARY_DIR:STATIC=/home/houndsito/vt-cro/robogamescode/car_ws/buil
 articubot_one_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
+<<<<<<< HEAD
 articubot_one_SOURCE_DIR:STATIC=/home/houndsito/vt-cro/robogamescode/car_ws/src/articubot_one
+=======
+<<<<<<< HEAD
+articubot_one_SOURCE_DIR:STATIC=/home/lab/vt-cro/robogamescode/car_ws/src/articubot_one
+=======
+<<<<<<< HEAD
+articubot_one_SOURCE_DIR:STATIC=/home/houndsito/vt-cro/robogamescode/car_ws/src/tmp
+=======
+articubot_one_SOURCE_DIR:STATIC=/home/lab/vt-cro/robogamescode/car_ws/src/tmp
+>>>>>>> bffa34cc4d2e80b9ee4c00295ab6b34fe4980d59
+>>>>>>> 3c98f156eb7cbb5845bf84cc21812c85b1e72460
+>>>>>>> a34ecf7021da3d36075420487bd4b06d14c55069
 
 //The directory containing a CMake configuration file for builtin_interfaces.
 builtin_interfaces_DIR:PATH=/opt/ros/jazzy/share/builtin_interfaces/cmake
@@ -641,7 +653,19 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
+<<<<<<< HEAD
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/houndsito/vt-cro/robogamescode/car_ws/src/articubot_one
+=======
+<<<<<<< HEAD
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/lab/vt-cro/robogamescode/car_ws/src/articubot_one
+=======
+<<<<<<< HEAD
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/houndsito/vt-cro/robogamescode/car_ws/src/tmp
+=======
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/lab/vt-cro/robogamescode/car_ws/src/tmp
+>>>>>>> bffa34cc4d2e80b9ee4c00295ab6b34fe4980d59
+>>>>>>> 3c98f156eb7cbb5845bf84cc21812c85b1e72460
+>>>>>>> a34ecf7021da3d36075420487bd4b06d14c55069
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

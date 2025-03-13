@@ -1,0 +1,70 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "Unix Makefiles"
+		},
+		"paths" : 
+		{
+			"cmake" : "/usr/bin/cmake",
+			"cpack" : "/usr/bin/cpack",
+			"ctest" : "/usr/bin/ctest",
+			"root" : "/usr/share/cmake-3.28"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 3,
+			"minor" : 28,
+			"patch" : 3,
+			"string" : "3.28.3",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+<<<<<<< HEAD:car_ws/build/articubot_one/.cmake/api/v1/reply/index-2025-03-13T01-05-14-0432.json
+			"jsonFile" : "codemodel-v2-6fb91decb7c9afb7395e.json",
+=======
+<<<<<<<< HEAD:car_ws/build/articubot_one/.cmake/api/v1/reply/index-2025-03-12T05-30-39-0592.json
+			"jsonFile" : "codemodel-v2-6b2d04898ea04237750c.json",
+========
+			"jsonFile" : "codemodel-v2-86b1a3fd02214a166f13.json",
+>>>>>>>> bffa34cc4d2e80b9ee4c00295ab6b34fe4980d59:car_ws/build/articubot_one/.cmake/api/v1/reply/index-2025-03-12T05-31-57-0578.json
+>>>>>>> 3c98f156eb7cbb5845bf84cc21812c85b1e72460:car_ws/build/articubot_one/.cmake/api/v1/reply/index-2025-03-12T05-31-57-0578.json
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 6
+			}
+		}
+	],
+	"reply" : 
+	{
+		"client-colcon-cmake" : 
+		{
+			"codemodel-v2" : 
+			{
+<<<<<<< HEAD:car_ws/build/articubot_one/.cmake/api/v1/reply/index-2025-03-13T01-05-14-0432.json
+				"jsonFile" : "codemodel-v2-6fb91decb7c9afb7395e.json",
+=======
+<<<<<<<< HEAD:car_ws/build/articubot_one/.cmake/api/v1/reply/index-2025-03-12T05-30-39-0592.json
+				"jsonFile" : "codemodel-v2-6b2d04898ea04237750c.json",
+========
+				"jsonFile" : "codemodel-v2-86b1a3fd02214a166f13.json",
+>>>>>>>> bffa34cc4d2e80b9ee4c00295ab6b34fe4980d59:car_ws/build/articubot_one/.cmake/api/v1/reply/index-2025-03-12T05-31-57-0578.json
+>>>>>>> 3c98f156eb7cbb5845bf84cc21812c85b1e72460:car_ws/build/articubot_one/.cmake/api/v1/reply/index-2025-03-12T05-31-57-0578.json
+				"kind" : "codemodel",
+				"version" : 
+				{
+					"major" : 2,
+					"minor" : 6
+				}
+			}
+		}
+	}
+}
