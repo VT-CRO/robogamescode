@@ -103,6 +103,37 @@ def generate_launch_description():
         arguments=["/camera/image_raw"]
     )
 
+    # Controls robot by using teleop in Gazebo. 
+    teleop_twist_keyboard = Node(
+    package='teleop_twist_keyboard',
+    executable='teleop_twist_keyboard',
+    name='teleop_twist_keyboard',
+    output='screen',
+    parameters=[{'stamped': True}],
+    remappings=[('/cmd_vel', '/diff_cont/cmd_vel')]
+)
+
+
+    # Controls robot by using Joysticks. 
+    joy_node = Node(
+    package="joy",
+    executable="joy_node",
+    name="joy_node",
+    output="screen",
+    parameters=[{'use_sim_time': True}]
+)
+
+    teleop_joy = Node(
+    package="teleop_twist_joy",
+    executable="teleop_node",
+    name="teleop_joy",
+    output="screen",
+    parameters=[{'use_sim_time': True}],
+    remappings=[("/cmd_vel", "/cmd_vel")]
+)
+
+
+
     # Launch them all!
     return LaunchDescription([
         rsp,
@@ -114,5 +145,8 @@ def generate_launch_description():
         diff_drive_spawner,
         joint_broad_spawner,
         ros_gz_bridge,
-        ros_gz_image_bridge
+        ros_gz_image_bridge,
+        teleop_twist_keyboard,
+        joy_node, 
+        teleop_joy, 
     ])
