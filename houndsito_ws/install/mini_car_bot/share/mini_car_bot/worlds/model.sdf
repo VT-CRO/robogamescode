@@ -1,0 +1,99 @@
+<sdf version="1.6">
+  <world name="model">
+
+    <physics name="1ms" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+    <plugin
+      filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands">
+    </plugin>
+    <plugin
+      filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin
+      filename="gz-sim-contact-system"
+      name="gz::sim::systems::Contact">
+    </plugin>
+
+    <physics type="ode">
+    <real_time_update_rate>1000</real_time_update_rate>
+    <max_step_size>0.001</max_step_size>
+    <gravity>0 0 -9.81</gravity>
+    </physics>
+
+
+    <!-- ================== Ground =========================== -->
+
+    <!-- Ground Model -->
+    <model name="ground">
+      <static>true</static>
+      <link name="ground_link">
+        <collision name="collision1">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100000 100000</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual1">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100000 100000</size>
+            </plane>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+
+   <!-- ================== Ground =========================== -->
+
+    <!-- ================== Yellow Cylinder 5 Model =========================== -->
+
+    <model name="yellow_cylinder5">
+      <pose>0 0 0 0 0 0</pose>
+      <link name="body">
+        
+        <!-- Collision -->
+        <collision name="collision1">
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>1.0</length>
+            </cylinder>
+          </geometry>
+        </collision>
+
+        <!-- Visual with Mesh -->
+        <visual name="visual1">
+          <geometry>
+            <mesh>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/houndsito_ws/src/mini_car_bot/worlds/meshes/yellow5.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
+            <diffuse>1 1 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ================== Yellow Cylinder 5 Model =========================== -->
+
+  </world>
+</sdf>

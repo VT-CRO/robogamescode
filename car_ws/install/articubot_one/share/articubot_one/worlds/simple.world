@@ -110,7 +110,7 @@
         <visual name="visual1">
           <geometry>
             <mesh>
-              <uri>file:///home/lab/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/yellow1.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/yellow1.stl</uri>
             </mesh>
           </geometry>
           <material>
@@ -141,7 +141,7 @@
         <visual name="visual1">
           <geometry>
             <mesh>
-              <uri>file:///home/lab/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/yellow2.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/yellow2.stl</uri>
             </mesh>
           </geometry>
           <material>
@@ -175,7 +175,7 @@
         <visual name="visual1">
           <geometry>
             <mesh>
-              <uri>file:///home/lab/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/yellow3.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/yellow3.stl</uri>
             </mesh>
           </geometry>
           <material>
@@ -209,7 +209,7 @@
         <visual name="visual1">
           <geometry>
             <mesh>
-              <uri>file:///home/lab/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/yellow4.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/yellow4.stl</uri>
             </mesh>
           </geometry>
           <material>
@@ -243,7 +243,7 @@
         <visual name="visual1">
           <geometry>
             <mesh>
-              <uri>file:///home/lab/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/yellow5.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/yellow5.stl</uri>
             </mesh>
           </geometry>
           <material>
@@ -277,7 +277,7 @@
         <visual name="visual1">
           <geometry>
             <mesh>
-              <uri>file:///home/lab/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/blue.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/blue.stl</uri>
             </mesh>
           </geometry>
           <material>
@@ -311,7 +311,7 @@
         <visual name="visual1">
           <geometry>
             <mesh>
-              <uri>file:///home/lab/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/red1.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/red1.stl</uri>
             </mesh>
           </geometry>
           <material>
@@ -345,7 +345,7 @@
         <visual name="visual1">
           <geometry>
             <mesh>
-              <uri>file:///home/lab/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/red2.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/red2.stl</uri>
             </mesh>
           </geometry>
           <material>
@@ -378,7 +378,7 @@
         <visual name="visual1">
           <geometry>
             <mesh>
-              <uri>file:///home/lab/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/wood.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/wood.stl</uri>
               <scale>1 1 1</scale>  <!-- Adjust if needed -->
             </mesh>
           </geometry>
@@ -412,7 +412,7 @@
         <visual name="visual1">
           <geometry>
             <mesh>
-              <uri>file:///home/lab/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/block.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/block.stl</uri>
               <scale>1 1 1</scale>  <!-- Adjust if needed -->
             </mesh>
           </geometry>
@@ -446,7 +446,7 @@
         <visual name="visual1">
           <geometry>
             <mesh>
-              <uri>file:///home/lab/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/ramp.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/ramp.stl</uri>
               <scale>1 1 1</scale>  <!-- Adjust if needed -->
             </mesh>
           </geometry>

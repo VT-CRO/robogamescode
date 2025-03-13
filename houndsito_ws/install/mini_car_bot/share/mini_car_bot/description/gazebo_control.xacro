@@ -1,0 +1,53 @@
+<!-- This XML file is a configuration for a robot simulation in Gazebo (often used with ROS). 
+It sets up plugins that tell the simulator how to model and interact with a differential drive robot.  -->
+
+<?xml version="1.0"?> 
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <gazebo>
+
+         <!--INPUT-->
+
+        <!-- This plugin configures the differential drive system for the robot: -->
+        <plugin name="gz::sim::systems::DiffDrive" filename="gz-sim-diff-drive-system">
+
+            <!--Wheel information-->
+            <left_joint>left_wheel_joint</left_joint>
+            <right_joint>right_wheel_joint</right_joint>
+            <!-- indicate which joints will have their state information published. -->
+
+            <wheel_separation>0.35</wheel_separation>
+            <wheel_radius>0.05</wheel_radius>
+
+            <!--Limits-->
+            <max_linear_acceleration>0.33</max_linear_acceleration>
+            
+            <!-- Input -->
+            <topic>cmd_vel</topic>
+
+            <!--Output-->
+            <frame_id>odom</frame_id>
+            <child_frame_id>base_link</child_frame_id>
+            <!-- ^ configures the coordinate frames used for odometry, with “odom” as the fixed frame and “base_link” as the moving frame of the robot. -->
+            
+            <odom_topic>odom</odom_topic> <!-- specifies the ROS topic from which the robot will receive velocity commands-->
+            <odom_publisher_frequency>30</odom_publisher_frequency>
+            <!-- tell the simulator to publish odometry information on the “odom” topic at 30 Hz. -->
+            
+            <tf_topic>/tf</tf_topic>
+            <!-- sets the topic on which the transform (tf) messages are published, which is essential for keeping track of the robot’s position and orientation in the simulation. -->
+        </plugin>
+
+        <!--OUTPUT-->
+
+        <!-- This second plugin is responsible for publishing the state of the robot’s joints: -->
+        <plugin filename="gz-sim-joint-state-publisher-system"
+            name="gz::sim::systems::JointStatePublisher">
+            <topic>joint_states</topic>
+            <!-- The plugin publishes joint state messages (such as position, velocity) on the “joint_states” topic. -->
+            <joint_name>left_wheel_joint</joint_name>
+            <joint_name>right_wheel_joint</joint_name>
+            <!-- indicate which joints will have their state information published. -->
+        </plugin>
+    </gazebo>
+
+</robot>

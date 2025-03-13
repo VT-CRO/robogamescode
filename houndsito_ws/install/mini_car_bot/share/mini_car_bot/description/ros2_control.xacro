@@ -1,0 +1,79 @@
+<?xml version="1.0"?> 
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    
+    <xacro:if value="$(arg sim_mode)">
+        <ros2_control name="GazeboSystem" type="system">
+            <hardware> 
+                <!--hardware tag tells ROS 2 control to use Gazebo’s simulated hardware interface. -->
+                <!--this plugin is our hardware interface and inside is its name-->
+                <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+            </hardware>
+            <joint name="left_wheel_joint">
+                <command_interface name="velocity">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="velocity"/>
+                <state_interface name="position"/>
+            </joint>
+            <joint name="right_wheel_joint">
+                <command_interface name="velocity">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="velocity"/>
+                <state_interface name="position"/>
+            </joint>
+        </ros2_control> 
+    </xacro:if>
+
+    <xacro:unless value="$(arg sim_mode)">
+        <ros2_control name="RealRobot" type="system">
+             <hardware> <!--tells ROS 2 control to use DiffDriveArduino plugin. -->
+                <plugin>diffdrive_arduino/DiffDriveArduinoHardware</plugin>
+                <!-- <plugin>mock_components/GenericSystem</plugin> -->
+                <param name="left_wheel_name">left_wheel_joint</param>
+                <param name="right_wheel_name">right_wheel_joint</param>
+                <param name="loop_rate">30</param>
+                <param name="device">/dev/ttyUSB0</param>
+                <param name="baud_rate">57600</param>
+                <param name="timeout">1000</param>
+                <param name="enc_counts_per_rev">3436</param>
+            </hardware>
+            <!-- joint definitions -->
+            <joint name="left_wheel_joint">
+                <command_interface name="velocity">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="velocity"/>
+                <state_interface name="position"/>
+            </joint>
+            <joint name="right_wheel_joint">
+                <command_interface name="velocity">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="velocity"/>
+                <state_interface name="position"/>
+            </joint>
+        </ros2_control>
+    </xacro:unless>
+    
+    <!--the following will only be processed if gazebo is called for thru sim_mode-->
+    <!--if we want to use real robot then my_controllers is passed on to it in the launch_robot.py file-->
+    
+    <!--this plugin does a lot of things-->
+    <!--it sets up a lot of things on gazebo end-->
+    <!--it contains its own controller manager so we don't need to start our own one-->
+    <!--the contr manager is able to get the urdf thru the robot state publisher-->
+    <!--but we need to provide it the info about the yaml file location-->
+    <gazebo>
+        <plugin name="gz_ros2_control::GazeboSimROS2ControlPlugin" filename="libgz_ros2_control-system.so">
+            <parameters>$(find mini_car_bot)/config/my_controllers.yaml</parameters>
+            <parameters>$(find mini_car_bot)/config/gaz_ros2_ctl_use_sim.yaml</parameters>
+        </plugin>
+    </gazebo>
+  
+
+</robot>

@@ -1,405 +1,940 @@
-<sdf version="1.4">
-  <world name="simple_world">
-
-    <!-- ================== Ground =========================== -->
-
-    <!-- Ground Model -->
-    <model name="ground">
+<sdf version='1.10'>
+  <world name='simple'>
+    <physics name='1ms' type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
+    <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
+    <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
+    <plugin name='gz::sim::systems::Sensors' filename='gz-sim-sensors-system'>
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/>
+    <gravity>0 0 -9.8000000000000007</gravity>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <scene>
+      <ambient>0.400000006 0.400000006 0.400000006 1</ambient>
+      <background>0.699999988 0.699999988 0.699999988 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <model name='ground'>
       <static>true</static>
-      <link name="ground_link">
-        <collision name="collision1">
+      <link name='ground_link'>
+        <collision name='collision1'>
           <geometry>
             <plane>
               <normal>0 0 1</normal>
               <size>100000 100000</size>
             </plane>
           </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
         </collision>
-        <visual name="visual1">
+        <visual name='visual1'>
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>100000 100000</size>
+              <size>500000 500000</size>
             </plane>
           </geometry>
         </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
       </link>
-    </model>
-
-
-   <!-- ================== Ground =========================== -->
-
-    <model name="yellow_cylinder1">
       <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
+      <self_collide>false</self_collide>
+    </model>
+    <model name='yellow_cylinder1'>
+      <pose>3.0084965698181372 -7.2693544571142894e-09 -0.092406731749045498 -1.1327528993487523e-07 -9.0327457712838975e-07 -5.3326172597267607e-08</pose>
+      <link name='body'>
+        <collision name='collision1'>
           <geometry>
             <cylinder>
               <radius>0.5</radius>
-              <length>1.0</length>
+              <length>1</length>
             </cylinder>
           </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
         </collision>
-
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
+        <visual name='visual1'>
           <geometry>
             <mesh>
-              <uri>file:///home/houndsito/vt-cro/robogamescode/world/meshes/yellow1.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/yellow1.stl</uri>
             </mesh>
           </geometry>
           <material>
-            <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
+            <ambient>1 1 0 1</ambient>
             <diffuse>1 1 0 1</diffuse>
           </material>
         </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
       </link>
+      <static>false</static>
+      <self_collide>false</self_collide>
     </model>
-
-    <!-- ================== Yellow Cylinder 1 Model =========================== -->
-
-
-    <!-- ================== Yellow Cylinder 2 Model =========================== -->
-
-    <model name="yellow_cylinder2">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
+    <model name='yellow_cylinder2'>
+      <pose>3.0009096317635926 -7.1153586407611309e-09 -0.092404167560249911 -7.4403164090377721e-08 1.0111075047363011e-08 9.8034191410355019e-08</pose>
+      <link name='body'>
+        <collision name='collision1'>
           <geometry>
             <cylinder>
               <radius>0.5</radius>
-              <length>1.0</length>
+              <length>1</length>
             </cylinder>
           </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
         </collision>
-
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
+        <visual name='visual1'>
           <geometry>
             <mesh>
-              <uri>file:///home/houndsito/vt-cro/robogamescode/world/meshes/yellow2.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/yellow2.stl</uri>
             </mesh>
           </geometry>
           <material>
-            <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
+            <ambient>1 1 0 1</ambient>
             <diffuse>1 1 0 1</diffuse>
           </material>
         </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
       </link>
+      <static>false</static>
+      <self_collide>false</self_collide>
     </model>
-
-    <!-- ================== Yellow Cylinder 2 Model =========================== -->
-
-
-    <!-- ================== Yellow Cylinder 3 Model =========================== -->
-
-    <model name="yellow_cylinder3">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
+    <model name='yellow_cylinder3'>
+      <pose>2.993324990636272 1.2385129306177e-07 -0.092405082521167969 8.3954716327708989e-08 3.4007507285904365e-08 -2.5436487316019818e-07</pose>
+      <link name='body'>
+        <collision name='collision1'>
           <geometry>
             <cylinder>
               <radius>0.5</radius>
-              <length>1.0</length>
+              <length>1</length>
             </cylinder>
           </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
         </collision>
-
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
+        <visual name='visual1'>
           <geometry>
             <mesh>
-              <uri>file:///home/houndsito/vt-cro/robogamescode/world/meshes/yellow3.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/yellow3.stl</uri>
             </mesh>
           </geometry>
           <material>
-            <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
+            <ambient>1 1 0 1</ambient>
             <diffuse>1 1 0 1</diffuse>
           </material>
         </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
       </link>
+      <static>false</static>
+      <self_collide>false</self_collide>
     </model>
-
-    <!-- ================== Yellow Cylinder 3 Model =========================== -->
-
-
-    <!-- ================== Yellow Cylinder 4 Model =========================== -->
-
-    <model name="yellow_cylinder4">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
+    <model name='yellow_cylinder4'>
+      <pose>2.9781396750357034 2.4074654107507342e-08 -0.092403542561404012 2.4034165082752323e-07 1.0861611004436117e-06 -1.5524992925101128e-07</pose>
+      <link name='body'>
+        <collision name='collision1'>
           <geometry>
             <cylinder>
               <radius>0.5</radius>
-              <length>1.0</length>
+              <length>1</length>
             </cylinder>
           </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
         </collision>
-
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
+        <visual name='visual1'>
           <geometry>
             <mesh>
-              <uri>file:///home/houndsito/vt-cro/robogamescode/world/meshes/yellow4.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/yellow4.stl</uri>
             </mesh>
           </geometry>
           <material>
-            <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
+            <ambient>1 1 0 1</ambient>
             <diffuse>1 1 0 1</diffuse>
           </material>
         </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
       </link>
+      <static>false</static>
+      <self_collide>false</self_collide>
     </model>
-
-    <!-- ================== Yellow Cylinder 4 Model =========================== -->
-
-
-    <!-- ================== Yellow Cylinder 5 Model =========================== -->
-
-    <model name="yellow_cylinder5">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
+    <model name='blue_cylinder'>
+      <pose>2.968059175670946 -8.9768462400680307e-10 -0.092403673535159284 -9.2257653397308553e-09 8.7723679136444566e-07 5.8050996720940638e-08</pose>
+      <link name='body'>
+        <collision name='collision1'>
           <geometry>
             <cylinder>
               <radius>0.5</radius>
-              <length>1.0</length>
+              <length>1</length>
             </cylinder>
           </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
         </collision>
-
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
+        <visual name='visual1'>
           <geometry>
             <mesh>
-              <uri>file:///home/houndsito/vt-cro/robogamescode/world/meshes/yellow5.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/blue.stl</uri>
             </mesh>
           </geometry>
           <material>
-            <ambient>1 1 0 1</ambient> <!-- Yellow Color -->
-            <diffuse>1 1 0 1</diffuse>
-          </material>
-        </visual>
-      </link>
-    </model>
-
-    <!-- ================== Yellow Cylinder 5 Model =========================== -->
-
-
-    <!-- ================== Blue Cylinder Model =========================== -->
-
-    <model name="blue_cylinder">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>1.0</length>
-            </cylinder>
-          </geometry>
-        </collision>
-
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
-          <geometry>
-            <mesh>
-              <uri>file:///home/houndsito/vt-cro/robogamescode/world/meshes/blue.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <ambient>0 0 1 1</ambient> <!-- Blue Color -->
+            <ambient>0 0 1 1</ambient>
             <diffuse>0 0 1 1</diffuse>
           </material>
         </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
       </link>
+      <static>false</static>
+      <self_collide>false</self_collide>
     </model>
-
-    <!-- ================== Blue Cylinder Model =========================== -->
-
-
-    <!-- ================== Red Cylinder 1 Model =========================== -->
-
-    <model name="red_cylinder1">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
+    <model name='red_cylinder1'>
+      <pose>10 10 -0.092403120322454388 4.0432849814122287e-18 -9.9197792903071868e-18 -3.6050613145368386e-24</pose>
+      <link name='body'>
+        <collision name='collision1'>
           <geometry>
             <cylinder>
               <radius>0.5</radius>
-              <length>1.0</length>
+              <length>1</length>
             </cylinder>
           </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
         </collision>
-
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
+        <visual name='visual1'>
           <geometry>
             <mesh>
-              <uri>file:///home/houndsito/vt-cro/robogamescode/world/meshes/red1.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/red1.stl</uri>
             </mesh>
           </geometry>
           <material>
-            <ambient>1 0 0 1</ambient> <!-- Red Color -->
+            <ambient>1 0 0 1</ambient>
             <diffuse>1 0 0 1</diffuse>
           </material>
         </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
       </link>
+      <static>false</static>
+      <self_collide>false</self_collide>
     </model>
-
-    <!-- ================== Red Cylinder 1 Model =========================== -->
-
-
-    <!-- ================== Red Cylinder 2 Model =========================== -->
-
-    <model name="red_cylinder2">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
+    <model name='red_cylinder2'>
+      <pose>2.9857299558728037 1.1804739489575194e-07 -0.092402604506384711 -1.2255553933351869e-07 8.2077543778741187e-07 3.0897550077027539e-07</pose>
+      <link name='body'>
+        <collision name='collision1'>
           <geometry>
             <cylinder>
               <radius>0.5</radius>
-              <length>1.0</length>
+              <length>1</length>
             </cylinder>
           </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
         </collision>
-
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
+        <visual name='visual1'>
           <geometry>
             <mesh>
-              <uri>file:///home/houndsito/vt-cro/robogamescode/world/meshes/red2.stl</uri>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/red2.stl</uri>
             </mesh>
           </geometry>
           <material>
-            <ambient>1 0 0 1</ambient> <!-- Red Color -->
+            <ambient>1 0 0 1</ambient>
             <diffuse>1 0 0 1</diffuse>
           </material>
         </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
       </link>
+      <static>false</static>
+      <self_collide>false</self_collide>
     </model>
-
-    <!-- ================== Red Cylinder 2 Model =========================== -->
-
-
-    <!-- ================== Wood Model =========================== -->
-
-    <model name="wood">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
+    <model name='wood'>
+      <pose>3.031290679944934 -8.4374482962077994e-08 -0.092401698691102194 4.5114071955902983e-09 3.3390803582690896e-08 1.4356190957757783e-07</pose>
+      <link name='body'>
+        <collision name='collision1'>
           <geometry>
             <box>
-            <size> 1 1 1</size>  <!-- Adjust size as needed -->
+              <size>1 1 1</size>
             </box>
           </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
         </collision>
-
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
+        <visual name='visual1'>
           <geometry>
             <mesh>
-              <uri>file:///home/houndsito/vt-cro/robogamescode/world/meshes/wood.stl</uri>
-              <scale>1 1 1</scale>  <!-- Adjust if needed -->
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/wood.stl</uri>
+              <scale>1 1 1</scale>
             </mesh>
           </geometry>
           <material>
-            <ambient>0.5 0.25 0 1</ambient> <!-- Brown Color -->
+            <ambient>0.5 0.25 0 1</ambient>
             <diffuse>0.5 0.25 0 1</diffuse>
           </material>
         </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
       </link>
+      <static>false</static>
+      <self_collide>false</self_collide>
     </model>
-
-    <!-- ================== Wood Model =========================== -->
-
-
-    <!-- ================== Block Model =========================== -->
-
-    <model name="block">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
+    <model name='block'>
+      <pose>3.0236931409512464 -8.0692309861813554e-08 -0.092401700255004438 2.1680875748219136e-08 6.8933758151368931e-09 1.0315731763188721e-07</pose>
+      <link name='body'>
+        <collision name='collision1'>
           <geometry>
             <box>
-            <size> 1 1 1</size>  <!-- Adjust size as needed -->
+              <size>1 1 1</size>
             </box>
           </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
         </collision>
-
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
+        <visual name='visual1'>
           <geometry>
             <mesh>
-              <uri>file:///home/houndsito/vt-cro/robogamescode/world/meshes/block.stl</uri>
-              <scale>1 1 1</scale>  <!-- Adjust if needed -->
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/block.stl</uri>
+              <scale>1 1 1</scale>
             </mesh>
           </geometry>
           <material>
-            <ambient>0.5 0.5 0.5 1</ambient> <!-- Gray Color -->
+            <ambient>0.5 0.5 0.5 1</ambient>
             <diffuse>0.5 0.5 0.5 1</diffuse>
           </material>
         </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
       </link>
+      <static>false</static>
+      <self_collide>false</self_collide>
     </model>
-
-    <!-- ================== Block Model =========================== -->
-
-
-    <!-- ================== Ramp Model =========================== -->
-
-    <model name="ramp">
-      <pose>0 0 0 0 0 0</pose>
-      <link name="body">
-        
-        <!-- Collision -->
-        <collision name="collision1">
+    <model name='ramp'>
+      <pose>3.016096041961009 -1.2847185936030516e-07 -0.092401686969259295 -2.8100884939105634e-08 4.8956162957704995e-09 3.4209992047909893e-07</pose>
+      <link name='body'>
+        <collision name='collision1'>
           <geometry>
             <box>
-            <size>1 1 1</size>  <!-- Adjust size as needed -->
+              <size>1 1 1</size>
             </box>
           </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
         </collision>
-
-        <!-- Visual with Mesh -->
-        <visual name="visual1">
+        <visual name='visual1'>
           <geometry>
             <mesh>
-              <uri>file:///home/houndsito/vt-cro/robogamescode/world/meshes/ramp.stl</uri>
-              <scale>1 1 1</scale>  <!-- Adjust if needed -->
+              <uri>file:///home/houndsito/vt-cro/robogamescode/car_ws/src/mini_car_bot/worlds/meshes/ramp.stl</uri>
+              <scale>1 1 1</scale>
             </mesh>
           </geometry>
           <material>
-            <ambient>0.5 0.25 0 1</ambient> <!-- Brown Color -->
+            <ambient>0.5 0.25 0 1</ambient>
             <diffuse>0.5 0.25 0 1</diffuse>
           </material>
         </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
       </link>
+      <static>false</static>
+      <self_collide>false</self_collide>
     </model>
-
-    <!-- ================== Ramp Model =========================== -->
-
-
+    <model name='mini_car_robot'>
+      <link name='base_link'>
+        <inertial>
+          <pose>-0.060313725490196091 0 0.057392156862745097 0 0 0</pose>
+          <mass>0.51000000000000001</mass>
+          <inertia>
+            <ixx>0.0037858632352941171</ixx>
+            <ixy>0</ixy>
+            <ixz>-7.4362745098039166e-05</ixz>
+            <iyy>0.0056197480392156914</iyy>
+            <iyz>0</iyz>
+            <izz>0.0076863681372549061</izz>
+          </inertia>
+        </inertial>
+        <collision name='base_link_fixed_joint_lump__chassis_collision'>
+          <pose>-0.058500000000000003 0 0.058999999999999997 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.33500000000000002 0.26500000000000001 0.13800000000000001</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+          </surface>
+        </collision>
+        <collision name='base_link_fixed_joint_lump__caster_wheel_collision_1'>
+          <pose>-0.151 0 -0.023 0 0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.01</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.001</mu>
+                <mu2>0.001</mu2>
+              </ode>
+            </friction>
+            <bounce/>
+          </surface>
+        </collision>
+        <visual name='base_link_fixed_joint_lump__chassis_visual'>
+          <pose>-0.058500000000000003 0 0.058999999999999997 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.33500000000000002 0.26500000000000001 0.13800000000000001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Orange</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>1 0.37500003 0.125 1</diffuse>
+            <ambient>1 0.37500003 0.125 1</ambient>
+          </material>
+        </visual>
+        <visual name='base_link_fixed_joint_lump__camera_link_visual_1'>
+          <pose>0.078999999999999987 0 0.070000000000000007 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.029999999999999999 0.029999999999999999</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.25 0.25 1 1</diffuse>
+            <ambient>0.25 0.25 1 1</ambient>
+          </material>
+        </visual>
+        <visual name='base_link_fixed_joint_lump__camera_link_visual_2'>
+          <pose>0.078999999999999987 0 0.02 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.10000000000000001</length>
+              <radius>0.002</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0 0 0 1</diffuse>
+            <ambient>0 0 0 1</ambient>
+          </material>
+        </visual>
+        <visual name='base_link_fixed_joint_lump__caster_wheel_visual_3'>
+          <pose>-0.151 0 -0.023 0 0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.01</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/White</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>1 1 1 1</diffuse>
+            <ambient>1 1 1 1</ambient>
+          </material>
+        </visual>
+        <sensor name='camera' type='depth_camera'>
+          <pose>0.079000000000000001 0 0.070000000000000007 0 0 0</pose>
+          <topic>camera/image_raw</topic>
+          <update_rate>10</update_rate>
+          <enable_metrics>false</enable_metrics>
+          <camera name='__default__'>
+            <pose>0 0 0 0 0 0</pose>
+            <horizontal_fov>1.089</horizontal_fov>
+            <image>
+              <width>640</width>
+              <height>480</height>
+              <format>BGR_INT8</format>
+              <anti_aliasing>4</anti_aliasing>
+            </image>
+            <camera_info_topic>camera/camera_info</camera_info_topic>
+            <trigger_topic></trigger_topic>
+            <triggered>false</triggered>
+            <clip>
+              <near>0.050000000000000003</near>
+              <far>8</far>
+            </clip>
+            <save enabled='false'>
+              <path>__default__</path>
+            </save>
+            <visibility_mask>4294967295</visibility_mask>
+            <noise>
+              <type>none</type>
+              <mean>0</mean>
+              <stddev>0</stddev>
+            </noise>
+            <distortion>
+              <k1>0</k1>
+              <k2>0</k2>
+              <k3>0</k3>
+              <p1>0</p1>
+              <p2>0</p2>
+              <center>0.5 0.5</center>
+            </distortion>
+            <lens>
+              <type>stereographic</type>
+              <scale_to_hfov>true</scale_to_hfov>
+              <cutoff_angle>1.5707963267948966</cutoff_angle>
+              <env_texture_size>256</env_texture_size>
+            </lens>
+            <optical_frame_id></optical_frame_id>
+          </camera>
+        </sensor>
+        <pose>0 0 0 0 0 0</pose>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='left_wheel_joint' type='revolute'>
+        <pose>0 -1.3877787807814457e-17 0 0 0 0</pose>
+        <parent>base_link</parent>
+        <child>left_wheel</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+            <effort>inf</effort>
+            <velocity>inf</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='left_wheel'>
+        <pose>-2.3264454728053903e-25 0.14849999999999997 -6.9388939039072284e-18 -1.5707963267948961 9.1176866276373964e-19 -2.6646685393685674e-24</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>0.050000000000000003</mass>
+          <inertia>
+            <ixx>1.6429166666666668e-05</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.6429166666666668e-05</iyy>
+            <iyz>0</iyz>
+            <izz>2.7225000000000001e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='left_wheel_collision'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.033000000000000002</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+          </surface>
+        </collision>
+        <visual name='left_wheel_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.025999999999999999</length>
+              <radius>0.033000000000000002</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Blue</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.25 0.25 1 1</diffuse>
+            <ambient>0.25 0.25 1 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='right_wheel_joint' type='revolute'>
+        <pose>0 1.3877787807814457e-17 0 0 0 0</pose>
+        <parent>base_link</parent>
+        <child>right_wheel</child>
+        <axis>
+          <xyz>0 0 -1</xyz>
+          <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+            <effort>inf</effort>
+            <velocity>inf</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='right_wheel'>
+        <pose>-2.5849394142282115e-26 -0.14849999999999997 -6.9388939039072284e-18 1.5707963267948961 1.9696676562047053e-18 4.3541917043586836e-24</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>0.050000000000000003</mass>
+          <inertia>
+            <ixx>1.6429166666666668e-05</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.6429166666666668e-05</iyy>
+            <iyz>0</iyz>
+            <izz>2.7225000000000001e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='right_wheel_collision'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.033000000000000002</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+          </surface>
+        </collision>
+        <visual name='right_wheel_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.025999999999999999</length>
+              <radius>0.033000000000000002</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Blue</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <diffuse>0.25 0.25 1 1</diffuse>
+            <ambient>0.25 0.25 1 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <plugin name='gz_ros2_control::GazeboSimROS2ControlPlugin' filename='libgz_ros2_control-system.so'>
+        <parameters>/home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/config/my_controllers.yaml</parameters>
+        <parameters>/home/houndsito/vt-cro/robogamescode/car_ws/install/mini_car_bot/share/mini_car_bot/config/gaz_ros2_ctl_use_sim.yaml</parameters>
+      </plugin>
+      <frame name='base_footprint_joint' attached_to='base_link'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='base_footprint' attached_to='base_footprint_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_optical_joint' attached_to='camera_link'>
+        <pose>0 0 0 -1.5707963267948959 -5.5511151231257827e-17 -1.5707963267948959</pose>
+      </frame>
+      <frame name='camera_link_optical' attached_to='camera_optical_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_joint' attached_to='chassis'>
+        <pose>0.30499999999999999 0 0.080000000000000002 0 0 0</pose>
+      </frame>
+      <frame name='camera_link' attached_to='camera_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='caster_wheel_joint' attached_to='chassis'>
+        <pose>0.074999999999999997 0 -0.012999999999999999 0 0 0</pose>
+      </frame>
+      <frame name='caster_wheel' attached_to='caster_wheel_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='chassis_joint' attached_to='base_link'>
+        <pose>-0.22600000000000001 0 -0.01 0 0 0</pose>
+      </frame>
+      <frame name='chassis' attached_to='chassis_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <pose>9.3455288553524477e-10 1.7056074903905721e-19 0.032999601431457526 1.4362658585675225e-18 3.0625295528157755e-08 -1.5289616491174856e-19</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='yellow'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/world/meshes/yellow.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/houndsito/vt-cro/robogamescode/world/meshes/yellow.obj</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>-3.110037907456932 0.059276597347301639 0.00037214375158361199 -1.7615730180040091e-07 -1.0782277854557131e-07 -5.8066388723660453e-10</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <light name='sun' type='directional'>
+      <pose>10 0 10 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.5 0.10000000000000001 -0.90000000000000002</direction>
+      <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.01</linear>
+        <constant>0.90000000000000002</constant>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
   </world>
 </sdf>
