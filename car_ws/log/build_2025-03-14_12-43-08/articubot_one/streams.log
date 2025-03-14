@@ -1,0 +1,171 @@
+[0.008s] Invoking command in '/home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/car_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one
+[0.058s] -- The C compiler identification is GNU 13.3.0
+[0.108s] -- The CXX compiler identification is GNU 13.3.0
+[0.125s] -- Detecting C compiler ABI info
+[0.216s] -- Detecting C compiler ABI info - done
+[0.223s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.223s] -- Detecting C compile features
+[0.223s] -- Detecting C compile features - done
+[0.233s] -- Detecting CXX compiler ABI info
+[0.332s] -- Detecting CXX compiler ABI info - done
+[0.339s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.339s] -- Detecting CXX compile features
+[0.340s] -- Detecting CXX compile features - done
+[0.344s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.477s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.582s] -- Found rclpy: 7.1.3 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.585s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.634s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.650s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.667s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.686s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.766s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[0.829s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.833s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.939s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.959s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.980s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.051s] -- Found image_transport: 5.1.5 (/opt/ros/jazzy/share/image_transport/cmake)
+[1.083s] -- Found image_geometry: 4.1.0 (/opt/ros/jazzy/share/image_geometry/cmake)
+[1.088s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.185s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.190s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.190s] -- Configured cppcheck include dirs: 
+[1.190s] -- Configured cppcheck exclude dirs and/or files: 
+[1.194s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.194s] -- Configured cpplint exclude dirs and/or files: 
+[1.195s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.195s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.197s] -- Added test 'lint_cmake' to check CMake code style
+[1.198s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.202s] -- Added test 'uncrustify' to check C / C++ code style
+[1.202s] -- Configured uncrustify additional arguments: 
+[1.203s] -- Added test 'xmllint' to check XML markup files
+[1.205s] -- Configuring done (1.2s)
+[1.211s] -- Generating done (0.0s)
+[1.213s] -- Build files have been written to: /home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one
+[1.223s] Invoked command in '/home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/houndsito/vt-cro/robogamescode/car_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one
+[1.224s] Invoking command in '/home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one -- -j16 -l16
+[1.271s] Invoked command in '/home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one -- -j16 -l16
+[1.282s] Invoking command in '/home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one
+[1.290s] -- Install configuration: ""
+[1.290s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/lib/articubot_one/depth_to_scan.py
+[1.290s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config
+[1.290s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/navigate_w_replanning_and_recovery.xml
+[1.290s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/speedlimit_params.yaml
+[1.290s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/twist_mux.yaml
+[1.290s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_sim.yaml
+[1.290s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/gaz_ros2_ctl_use_sim.yaml
+[1.290s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/drive_bot.rviz
+[1.291s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/main.rviz
+[1.291s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/gz_bridge.yaml
+[1.291s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/speedlimit_nav2_params.yaml
+[1.291s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/map.rviz
+[1.291s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/nav2_params.yaml
+[1.291s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/empty.yaml
+[1.291s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/keepout_params.yaml
+[1.291s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/view_bot.rviz
+[1.291s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/mapper_params_online_async.yaml
+[1.291s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/my_controllers.yaml
+[1.291s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/joystick.yaml
+[1.292s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_robot.yaml
+[1.292s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/config/keepout_nav2_params.yaml
+[1.292s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/description
+[1.292s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/description/robot.urdf.xacro
+[1.292s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/description/inertial_macros.xacro
+[1.292s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/description/camera.xacro
+[1.292s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/description/gazebo_control.xacro
+[1.292s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/description/face.xacro
+[1.292s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/description/depth_camera.xacro
+[1.292s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/description/lidar.xacro
+[1.292s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/description/ros2_control.xacro
+[1.293s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/description/robot_core.xacro
+[1.293s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/launch
+[1.293s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/launch/rsp.launch.py
+[1.293s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/launch/localization_launch.py
+[1.293s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/launch/ball_tracker.launch.py
+[1.293s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py
+[1.293s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/launch/rplidar.launch.py
+[1.293s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/launch/navigation_launch.py
+[1.293s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/launch/online_async_launch.py
+[1.293s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/launch/launch_robot.launch.py
+[1.293s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/launch/camera.launch.py
+[1.294s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/launch/joystick.launch.py
+[1.294s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds
+[1.294s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/prev_empty.world
+[1.294s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/model.sdf
+[1.294s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/simple.world
+[1.294s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/obstacles.world
+[1.294s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/model.config
+[1.294s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security
+[1.294s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/yellow3.stl
+[1.295s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/red2.stl
+[1.295s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/yellow2.stl
+[1.295s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/yellow.obj
+[1.296s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/ramp.mtl
+[1.296s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/blue.obj
+[1.296s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/yellow1.stl
+[1.296s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/yellow5.stl
+[1.297s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/block.mtl
+[1.297s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/wood.obj
+[1.297s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/blue.stl
+[1.297s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/blue.mtl
+[1.297s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/block.obj
+[1.297s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/wood.mtl
+[1.298s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/block.stl
+[1.298s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/red.mtl
+[1.298s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/wood.stl
+[1.298s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/ramp.obj
+[1.298s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/red1.stl
+[1.298s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/yellow4.stl
+[1.298s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/red.obj
+[1.299s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/yellow.mtl
+[1.299s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/bridge.mtl
+[1.299s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/ramp.stl
+[1.299s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/bridge.obj
+[1.299s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/security/world1.stl
+[1.301s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/empty.world
+[1.301s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes
+[1.301s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/yellow3.stl
+[1.301s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/red2.stl
+[1.301s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/yellow2.stl
+[1.302s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/yellow.obj
+[1.302s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/ramp.mtl
+[1.302s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/blue.obj
+[1.303s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/yellow1.stl
+[1.303s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/yellow5.stl
+[1.303s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/block.mtl
+[1.303s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/wood.obj
+[1.304s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/blue.stl
+[1.304s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/blue.mtl
+[1.304s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/block.obj
+[1.304s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/wood.mtl
+[1.304s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/block.stl
+[1.304s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/red.mtl
+[1.305s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/wood.stl
+[1.305s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/ramp.obj
+[1.305s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/red1.stl
+[1.305s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/yellow4.stl
+[1.305s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/red.obj
+[1.305s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/yellow.mtl
+[1.305s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/bridge.mtl
+[1.306s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/ramp.stl
+[1.306s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/bridge.obj
+[1.306s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/worlds/meshes/world1.stl
+[1.307s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/maps
+[1.308s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one
+[1.308s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one
+[1.308s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh
+[1.308s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv
+[1.308s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/environment/path.sh
+[1.308s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/environment/path.dsv
+[1.308s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/local_setup.bash
+[1.309s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/local_setup.sh
+[1.309s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/local_setup.zsh
+[1.309s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/local_setup.dsv
+[1.309s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/package.dsv
+[1.309s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/ament_index/resource_index/packages/articubot_one
+[1.309s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake
+[1.309s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake
+[1.309s] -- Installing: /home/houndsito/vt-cro/robogamescode/car_ws/install/articubot_one/share/articubot_one/package.xml
+[1.311s] Invoked command in '/home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one
