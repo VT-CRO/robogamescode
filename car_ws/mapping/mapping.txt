@@ -1,7 +1,8 @@
 Command for mapping in rviz, using lidar. 
 
-Create the map in Rviz 
+Create the map in Rviz
 
+Command to use slam:
 ros2 launch slam_toolbox online_async_launch.py slam_params_file:=./src/articubot_one/config/mapper_params_online_async.yaml use_sim_time:=true
 
 Make sure to stop the previous command before creating the server
@@ -18,3 +19,12 @@ Using Adaptive Monte Carlo Localisation (amcl)
 ros2 run nav2_amcl amcl --ros-args -p use_sim_time:=true
 
 ros2 run nav2_util lifecycle_bringup amcl
+
+===========================================================
+
+Using Nav2 for auto-control
+ros2 run twist_mux twist_mux --ros-args --params-file ./src/articubot_one/config/twist_mux.yaml -r cmd_vel_out:=/diff_cont/cmd_vel_unstamped
+
+ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true
+
+
