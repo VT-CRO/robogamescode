@@ -23,7 +23,7 @@ def generate_launch_description():
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory(package_name),'launch','rsp.launch.py'
-                )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'true'}.items()
+                )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'false'}.items()
     )
 
     joystick = IncludeLaunchDescription(
@@ -44,16 +44,16 @@ def generate_launch_description():
     default_world = os.path.join(
         get_package_share_directory(package_name),
         'worlds',
-        'simple.world'
-        # 'empty.world'
+        #'simple.world'
+        'empty.world'
         )    
     
     world = LaunchConfiguration('world')
 
     world_arg = DeclareLaunchArgument(
-        'world'
+        'world',
         default_value=default_world,
-        description='simple.world'
+        description='World to load'
         )
 
     # Include the Gazebo launch file, provided by the ros_gz_sim package

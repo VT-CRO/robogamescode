@@ -11,5 +11,5 @@ filter_mask_server:
     use_sim_time: false
     frame_id: "map"
     topic_name: "/filter_mask"
-    yaml_filename: "/home/lab/vt-cro/car_ws/src/articubot_one/maps/my_home_map_speedlimit.yaml"
+    yaml_filename: "/home/houndsito/vt-cro/car_ws/src/artibubot_one/worlds/my_home_map_speedlimit.yaml"
     #yaml_filename: "/home/saikrishna/ros2_ws/src/agv_proto/maps/remap_speedlimit.yaml"

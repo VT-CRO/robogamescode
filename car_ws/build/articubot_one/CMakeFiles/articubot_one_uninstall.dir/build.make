@@ -53,15 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
-CMAKE_SOURCE_DIR = /home/lab/vt-cro/robogamescode/car_ws/src/articubot_one
-=======
-<<<<<<< HEAD
-CMAKE_SOURCE_DIR = /home/houndsito/vt-cro/robogamescode/car_ws/src/tmp
-=======
-CMAKE_SOURCE_DIR = /home/lab/vt-cro/robogamescode/car_ws/src/tmp
->>>>>>> bffa34cc4d2e80b9ee4c00295ab6b34fe4980d59
->>>>>>> 3c98f156eb7cbb5845bf84cc21812c85b1e72460
+CMAKE_SOURCE_DIR = /home/houndsito/vt-cro/robogamescode/car_ws/src/articubot_one
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one
@@ -90,14 +82,6 @@ CMakeFiles/articubot_one_uninstall.dir/clean:
 .PHONY : CMakeFiles/articubot_one_uninstall.dir/clean
 
 CMakeFiles/articubot_one_uninstall.dir/depend:
-<<<<<<< HEAD
-	cd /home/lab/vt-cro/robogamescode/car_ws/build/articubot_one && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lab/vt-cro/robogamescode/car_ws/src/articubot_one /home/lab/vt-cro/robogamescode/car_ws/src/articubot_one /home/lab/vt-cro/robogamescode/car_ws/build/articubot_one /home/lab/vt-cro/robogamescode/car_ws/build/articubot_one /home/lab/vt-cro/robogamescode/car_ws/build/articubot_one/CMakeFiles/articubot_one_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
-=======
-<<<<<<< HEAD
-	cd /home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/houndsito/vt-cro/robogamescode/car_ws/src/tmp /home/houndsito/vt-cro/robogamescode/car_ws/src/tmp /home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one /home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one /home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one/CMakeFiles/articubot_one_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
-=======
-	cd /home/lab/vt-cro/robogamescode/car_ws/build/articubot_one && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lab/vt-cro/robogamescode/car_ws/src/tmp /home/lab/vt-cro/robogamescode/car_ws/src/tmp /home/lab/vt-cro/robogamescode/car_ws/build/articubot_one /home/lab/vt-cro/robogamescode/car_ws/build/articubot_one /home/lab/vt-cro/robogamescode/car_ws/build/articubot_one/CMakeFiles/articubot_one_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
->>>>>>> bffa34cc4d2e80b9ee4c00295ab6b34fe4980d59
->>>>>>> 3c98f156eb7cbb5845bf84cc21812c85b1e72460
+	cd /home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/houndsito/vt-cro/robogamescode/car_ws/src/articubot_one /home/houndsito/vt-cro/robogamescode/car_ws/src/articubot_one /home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one /home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one /home/houndsito/vt-cro/robogamescode/car_ws/build/articubot_one/CMakeFiles/articubot_one_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/articubot_one_uninstall.dir/depend
 

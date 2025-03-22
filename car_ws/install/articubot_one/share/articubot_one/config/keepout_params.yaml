@@ -11,6 +11,6 @@ filter_mask_server:
     use_sim_time: false
     frame_id: "map"
     topic_name: "/keepout_filter_mask"
-    yaml_filename: "/home/lab/vt-cro/car_ws/src/articubot_one/maps/my_home_map_keepout2.yaml"
+    yaml_filename: "/home/houndsito/vt-cro/car_ws/src/artibubot_one/worlds/my_home_map_keepout2.yaml"
     #yaml_filename: "/home/saikrishna/ros2_ws/src/agv_proto/maps/my_home_map_keepout.yaml"
     #yaml_filename: "/home/saikrishna/ros2_ws/src/agv_proto/maps/remap_keepout.yaml"
